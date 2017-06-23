@@ -87,6 +87,7 @@ public class MainActivity extends BaseActivity
         btnSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                btnSignOut.setVisibility(View.GONE);
                 Auth.GoogleSignInApi.signOut(apiClient).setResultCallback(
                         new ResultCallback<Status>() {
                             @Override
@@ -94,7 +95,6 @@ public class MainActivity extends BaseActivity
                                 updateUI(false);
                             }
                         });
-                btnSignOut.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -142,7 +142,6 @@ public class MainActivity extends BaseActivity
         } else {
 
             btnSignIn.setVisibility(View.VISIBLE);
-            btnSignOut.setVisibility(View.VISIBLE);
         }
     }
 
