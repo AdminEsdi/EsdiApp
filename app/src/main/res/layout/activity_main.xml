@@ -64,15 +64,6 @@
                 android:contentDescription="@string/desc_firebase_lockup"
                 android:src="@mipmap/noulogoesdi" />
 
-            <TextView
-                android:id="@+id/title_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/title_bottom_margin"
-                android:text="@string/google_title_text"
-                android:theme="@style/ThemeOverlay.MyTitleText"
-                android:layout_weight="0.13" />
-
         </LinearLayout>
 
         <RelativeLayout

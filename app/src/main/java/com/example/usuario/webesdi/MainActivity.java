@@ -17,8 +17,11 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
+
+import static android.widget.Toast.LENGTH_LONG;
 
 public class MainActivity extends BaseActivity
         implements GoogleApiClient.OnConnectionFailedListener {
@@ -91,6 +94,7 @@ public class MainActivity extends BaseActivity
                                 updateUI(false);
                             }
                         });
+                btnSignOut.setVisibility(View.INVISIBLE);
             }
         });
 
@@ -168,6 +172,22 @@ public class MainActivity extends BaseActivity
             }
         }
     }
+    //silent
+    @Override
+    protected void onStart() {
+        super.onStart();
+
+        OptionalPendingResult<GoogleSignInResult> opr = Auth.GoogleSignInApi.silentSignIn(apiClient);
+        if (opr.isDone()) {
+            btnSignOut.setVisibility(View.VISIBLE);
+
+        } else {
+
+            btnSignOut.setVisibility(View.INVISIBLE);
+        }
+    }
+
+
 
 }
 
