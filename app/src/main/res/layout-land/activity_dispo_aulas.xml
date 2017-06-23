@@ -1,0 +1,97 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_centerHorizontal="true" >
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" />
+
+    <DatePicker
+        android:id="@+id/datePicker"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="invisible" />
+
+    <ImageView
+    android:id="@+id/ivMapa"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:src="@drawable/edifici_esdi_planta" />
+
+<ImageView
+    android:id="@+id/h1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:src="@drawable/edifici_esdi_h1rojo" />
+
+<ImageView
+    android:id="@+id/h2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:src="@drawable/edifici_esdi_h2rojo" />
+
+    <ImageView
+        android:id="@+id/h3"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/edifici_esdi_h3rojo" />
+    <ImageView
+        android:id="@+id/h4"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/edifici_esdi_h4rojo" />
+
+    <ImageView
+        android:id="@+id/h5"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:src="@drawable/edifici_esdi_h5rojo" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btnSeleccionarD"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginBottom="33dp"
+            android:layout_marginLeft="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/calendario" />
+
+        <Button
+            android:id="@+id/btnSeleccionarH"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@color/tarj3"
+            android:text="@string/siguiente"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginLeft="16dp" />
+
+        <Button
+            android:id="@+id/btnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:background="@color/tarj3"
+            android:text="@string/aceptar"
+            android:visibility="invisible"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lista de lenguas para la configuracion -->
+    <string-array name="listArray">
+        <item>Inglés</item>
+        <item>Catalán</item>
+        <item>Español</item>
+    </string-array>
+    <!-- Lista de valores para la configuracion de lenguas-->
+    <string-array name="listValues">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+    <!-- - - - - - - - - - - - - - - - - - - - - -->
+
+    <!-- Strings para el apartado de empresas colaboradoras -->
+    <string-array name="descripcionEmpresa">
+        <item>Dispositivos para captura y tratamineto de imagenes</item>
+        <item>Impresoras y ordenadores personales</item>
+        <item>Hosting y comunicaciones</item>
+    </string-array>
+    <string-array name="descripcionCompletaEmpresa">
+        <item>Sit</item>
+        <item>Amet</item>
+        <item>.</item>
+    </string-array>
+
+    <!-- Strings para el apartado de tutoriales -->
+    <string-array name="descripcionTutoriales">
+        <item>ESDI tutorial</item>
+        <item>UAB tutorial</item>
+        <item>Esto es el tercer item del array de strings, situado en /res/values/array</item>
+    </string-array>
+    <string-array name="descripcionCompletaTutoriales">
+        <item>ESDI tutorial donde puedes encontrar mucha información</item>
+        <item>UAB tutorial donde podras encontrar cosas de la universidad</item>
+        <item>.</item>
+    </string-array>
+
+</resources>

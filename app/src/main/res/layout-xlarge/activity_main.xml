@@ -1,0 +1,106 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_100"
+    android:orientation="vertical"
+    android:weightSum="4">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="971dp"
+            android:layout_height="357dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="230dp"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/google_icon"
+                style="@style/ThemeOverlay.FirebaseIcon"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginRight="157dp"
+                android:contentDescription="@string/desc_firebase_lockup"
+                android:src="@mipmap/noulogoesdi"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.549" />
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="157dp"
+                android:layout_weight="0.13"
+                android:text="@string/google_title_text"
+                android:textSize="55sp"
+                android:theme="@style/ThemeOverlay.MyTitleText"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="555dp"
+            android:layout_height="65dp"
+            android:background="#E0E0E0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:layout_editor_absoluteX="306dp"
+            tools:layout_editor_absoluteY="405dp">
+
+            <Button
+                android:id="@+id/sign_out_button"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_weight="0.39"
+                android:background="@color/grey_100"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/sign_out"
+                android:textColor="@color/letrasgoogle"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:typeface="normal" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="555dp"
+            android:layout_height="61dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="-2dp"
+            android:layout_weight="0.26"
+            android:background="@color/grey_300"
+            app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:visibility="visible"
+                tools:visibility="gone">
+
+            </com.google.android.gms.common.SignInButton>
+
+        </RelativeLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,272 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usuario.webesdi.Cafeteria">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/oferta1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pizza" />
+
+                <ImageView
+                    android:id="@+id/oferta2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pizza" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oferta3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj1"
+                    android:text="1.90€"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/oferta4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj2"
+                    android:text="7€"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oferta5"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj1"
+                    android:padding="8dp"
+                    android:text="Chips + Cerveza"
+                    android:textAlignment="center"
+                    android:textColor="@color/letrasEsdi" />
+
+                <TextView
+                    android:id="@+id/oferta6"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj2"
+                    android:padding="8dp"
+                    android:text="Pizza Peperonni"
+                    android:textAlignment="center"
+                    android:textColor="@color/letrasEsdi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/oferta7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pizza" />
+
+                <ImageView
+                    android:id="@+id/oferta8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pizza" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oferta9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj1"
+                    android:text="6€"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/oferta10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj2"
+                    android:text="7€"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oferta11"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj1"
+                    android:padding="8dp"
+                    android:text="Calamares + Cerveza"
+                    android:textAlignment="center"
+                    android:textColor="@color/letrasEsdi" />
+
+                <TextView
+                    android:id="@+id/oferta12"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj2"
+                    android:padding="8dp"
+                    android:text="Pizza 4 Quesos"
+                    android:textAlignment="center"
+                    android:textColor="@color/letrasEsdi" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/oferta13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pizza" />
+
+                <ImageView
+                    android:id="@+id/oferta14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/pizza" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oferta15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj1"
+                    android:text="6€"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/oferta16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj2"
+                    android:text="7€"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="24sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/oferta17"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj1"
+                    android:padding="8dp"
+                    android:text="Bravas + Cerveza"
+                    android:textAlignment="center"
+                    android:textColor="@color/letrasEsdi" />
+
+                <TextView
+                    android:id="@+id/oferta18"
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/tarj2"
+                    android:padding="8dp"
+                    android:text="Pizza Jamon"
+                    android:textAlignment="center"
+                    android:textColor="@color/letrasEsdi" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_menu_principal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.usuario.webesdi.MenuPrincipal"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/btndispoAulas"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/monitor"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnServicios"
+            android:layout_marginTop="-1dp" />
+
+        <ImageView
+            android:id="@+id/btnTutoriales"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="0dp"
+            app:layout_constraintLeft_toRightOf="@+id/btnpaginaweb"
+            app:layout_constraintTop_toTopOf="@+id/btnpaginaweb"
+            app:srcCompat="@drawable/grupo"
+            app:layout_constraintRight_toLeftOf="@+id/btnCafe"
+            android:layout_marginRight="0dp" />
+
+        <ImageView
+            android:id="@+id/btnpaginaweb"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/internet" />
+
+        <TextView
+            android:id="@+id/textWeb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/menuP_web"
+            android:textColor="#707070"
+            android:textSize="36sp"
+            app:layout_constraintHorizontal_bias="0.49"
+            app:layout_constraintLeft_toLeftOf="@+id/btnpaginaweb"
+            app:layout_constraintRight_toRightOf="@+id/btnpaginaweb"
+            app:layout_constraintTop_toBottomOf="@+id/btnpaginaweb" />
+
+        <ImageView
+            android:id="@+id/btnContacto"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/manos"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnEmpresas"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/textTutorial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/menuP_tutoriales"
+            android:textColor="#707070"
+            android:textSize="36sp"
+            app:layout_constraintLeft_toLeftOf="@+id/btnTutoriales"
+            app:layout_constraintRight_toRightOf="@+id/btnTutoriales"
+            app:layout_constraintTop_toBottomOf="@+id/btnTutoriales" />
+
+        <TextView
+            android:id="@+id/textAluas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/menuP_aulas"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintLeft_toLeftOf="@+id/btndispoAulas"
+            app:layout_constraintRight_toRightOf="@+id/btndispoAulas"
+            app:layout_constraintTop_toBottomOf="@+id/btndispoAulas" />
+
+        <ImageView
+            android:id="@+id/btnMensajes"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/sobre"
+            android:layout_marginRight="32dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnContacto"
+            android:layout_marginTop="0dp" />
+
+        <TextView
+            android:id="@+id/textMensajes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/menuP_mensajes"
+            android:textSize="36sp"
+            app:layout_constraintLeft_toLeftOf="@+id/btnMensajes"
+            app:layout_constraintRight_toRightOf="@+id/btnMensajes"
+            app:layout_constraintTop_toBottomOf="@+id/btnMensajes" />
+
+        <TextView
+            android:id="@+id/textEmpresas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/menuP_empresas"
+            android:textAlignment="center"
+            android:textSize="36sp"
+            app:layout_constraintHorizontal_bias="0.488"
+            app:layout_constraintLeft_toLeftOf="@+id/btnEmpresas"
+            app:layout_constraintRight_toRightOf="@+id/btnEmpresas"
+            app:layout_constraintTop_toBottomOf="@+id/btnEmpresas"
+            tools:layout_editor_absoluteY="611dp" />
+
+        <TextView
+            android:id="@+id/textIncidencies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/menuP_incidencias"
+            android:textSize="36sp"
+            android:visibility="invisible"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintLeft_toLeftOf="@+id/btnIncidencias"
+            app:layout_constraintRight_toRightOf="@+id/btnIncidencias"
+            app:layout_constraintTop_toBottomOf="@+id/btnIncidencias" />
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            android:textSize="18sp"
+            android:layout_marginLeft="1155dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <ImageView
+            android:id="@+id/btnEmpresas"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/fabrica"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginTop="125dp"
+            app:layout_constraintTop_toBottomOf="@+id/textWeb" />
+
+        <ImageView
+            android:id="@+id/btnServicios"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginLeft="32dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:srcCompat="@drawable/servicio"
+            android:layout_marginTop="125dp"
+            app:layout_constraintTop_toBottomOf="@+id/textEmpresas" />
+
+        <TextView
+            android:id="@+id/txtServeis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/menuP_estadoServicios"
+            android:textSize="36sp"
+            app:layout_constraintLeft_toLeftOf="@+id/btnServicios"
+            app:layout_constraintRight_toRightOf="@+id/btnServicios"
+            app:layout_constraintHorizontal_bias="0.633"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/btnServicios" />
+
+        <TextView
+            android:id="@+id/textContacto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="29dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/menuP_contacto"
+            android:textColor="#707070"
+            android:textSize="36sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnMensajes"
+            app:layout_constraintLeft_toLeftOf="@+id/btnContacto"
+            app:layout_constraintRight_toRightOf="@+id/btnContacto"
+            app:layout_constraintTop_toBottomOf="@+id/btnContacto"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/btnCafe"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            app:srcCompat="@drawable/cafeteria"
+            app:layout_constraintTop_toTopOf="@+id/btnpaginaweb"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="32dp"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/txtCafe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/menuP_cafeteria"
+            android:textSize="36sp"
+            app:layout_constraintLeft_toLeftOf="@+id/btnCafe"
+            app:layout_constraintRight_toRightOf="@+id/btnCafe"
+            app:layout_constraintTop_toBottomOf="@+id/btnCafe" />
+
+        <ImageView
+            android:id="@+id/btnIncidencias"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginRight="32dp"
+            android:visibility="invisible"
+            app:layout_constraintRight_toRightOf="parent"
+            app:srcCompat="@drawable/cruz"
+            app:layout_constraintTop_toTopOf="@+id/btndispoAulas"
+            android:layout_marginTop="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</RelativeLayout>
+

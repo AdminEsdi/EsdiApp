@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main activity -->
+    <string name="app_name">ProyectoEsdi</string>
+    <string name="title_activity_disponibilidad">Disponibilitat</string>
+    <string name="google_title_text">Inici sessió</string>
+    <string name="signed_out">Desconnectat</string>
+    <string name="acceso">Accés:</string>
+    <string name="desc_firebase_lockup">Nom i logo del Firebase</string>
+    <string name="sign_out">Desconectar</string>
+    <string name="disconnect">Desconnectar</string>
+    <string name="log_in">Entrar</string>
+    <string name="google_status_fmt">Compte: %s</string>
+    <string name="firebase_status_fmt">Usuari: %s</string>
+    <string name="loading">Carregant…</string>
+
+    <!-- contacto -->
+    <string name="contacto_titulo">DEPT. Informàtica</string>
+    <string name="contacto_subtitulo">Contacta amb nosaltres</string>
+    <string name="contacto_telefono">Telèfon</string>
+    <string name="contacto_correo">Correu</string>
+    <string name="contacto_consultas">Missatgeria</string>
+    <string name="contacto_habla">Parla amb nosaltres</string>
+    <string name="contacto_chat">chat</string>
+
+    <!-- menu principal -->
+    <string name="menuP_web">Pàgina web</string>
+    <string name="menuP_tutoriales">Tutorials</string>
+    <string name="menuP_contacto">Contacte</string>
+    <string name="menuP_aulas">Disponibilitat \n aules</string>
+    <string name="menuP_aulasV2">Disponibilitat aules</string>
+    <string name="menuP_mensajes">Missatges</string>
+    <string name="menuP_incidencias">Incidències</string>
+    <string name="menuP_empresas">Empreses\nColaboradores</string>
+    <string name="menuP_empresasV2">Empreses Colaboradores</string>
+    <string name="menuP_estadoServicios">Serveis</string>
+    <string name="menuP_cafeteria">Cafeteria</string>
+
+
+    <!-- Menu opciones -->
+    <string name="menuP_settings">Configuració</string>
+    <string name="help">Desconectar</string>
+
+    <!-- Activity impresoras -->
+    <string name="tituloEstadoImpr">Estat de les impressores de Sabadell</string>
+
+    <!-- Settings -->
+    <string name="confTemaTitulo">Fer servir el tema clar: </string>
+    <string name="confLenguaTitulo">Idioma:</string>
+    <string name="confLenguaDescr">Canvia la llengua de l\'app sense canviar la del telèfon</string>
+
+    <!-- Mensajes -->
+    <string name="sugerencias"> Suggeriments </string>
+    <string name="incidencias"> Incidències</string>
+    <string name="consultas"> Consultes </string>
+    <string name="equipo"> Equip </string>
+    <string name="titulo"> Títol </string>
+    <string name="escanear"> Escanejar QR </string>
+    <string name="descripcion"> Descripció </string>
+    <string name="nuevo"> Nou </string>
+    <string name="finalizar"> Finalitzar </string>
+    <string name="cancelar"> Cancel·lar </string>
+
+    <!-- Dispoaulas -->
+    <string name="seleccionarhora"> Seleccionar hora </string>
+    <string name="seleccionardia"> Seleccionar dia</string>
+    <string name="descrMapa">El mapa mostra la disponibilitat actual de les aules</string>
+    <string name="aceptar">Acceptar</string>
+    <string name="siguiente">Següent</string>
+
+    <!-- Tutoriales -->
+    <string name="visualizaPdf">Visualitzar PDF</string>
+
+    <!-- Servicios -->
+    <string name="menuSimpresores">Impressores</string>
+    <string name="menuSwifi">Wi-Fi</string>
+    <string name="menuSdocs">Google\nDocs</string>
+    <string name="menuScalendar">Google\nCalendar</string>
+    <string name="menuSmail">Gmail</string>
+    <string name="menuScafeteria">Cafeteria</string>
+    <string name="estat">Estat:</string>
+
+
+    <!--TITULOS-->
+    <string name="titMenuP">Menu Principal</string>
+    <string name="titContacto">Contacte</string>
+    <string name="titWeb">Pàgina Web</string>
+    <string name="titMensajes">Missatges</string>
+    <string name="titDispoA">Disponibilitat aules</string>
+    <string name="titGLPI">GLPI</string>
+    <string name="titEmpresas">Empreses Colaboradores</string>
+    <string name="titTutorial">Tutorials</string>
+    <string name="titServicios">Serveis</string>
+
+</resources>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#FF9317</color>-->
+    <color name="colorPrimary">#D57A21</color>
+    <color name="colorPrimaryDark">#C07725</color>
+    <color name="colorAccent">#C07755</color>
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="grey_300">#E0E0E0</color>
+    <color name="grey_100">#FFFFFF</color>
+    <color name="letrasEsdi">#01619B</color>
+    <color name="letrasgoogle">#707070</color>
+    <!--mensajes-->
+    <color name="incids01">#F5F5F5</color>
+
+    <!--desconocido-->
+    <color name="textSecondary">#F5F5F5</color>
+    <color name="white">#F5F5F5</color>
+
+    <!--color botones contact-->
+    <color name="botonesCon">#C1E7FD</color>
+    <color name="botonesPulsado">#65C5FC</color>
+
+    <!--color tutoriales-->
+    <color name="tarj1">#B5D1DC</color>
+    <color name="tarj2">#EBE1C5</color>
+    <color name="tarj3">#FCD0A2</color>
+</resources>

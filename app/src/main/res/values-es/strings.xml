@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main activity -->
+    <string name="app_name">ProyectoEsdi</string>
+    <string name="title_activity_disponibilidad">Disponibilidad</string>
+    <string name="google_title_text">Iniciar sesión</string>
+    <string name="signed_out">Desconectado</string>
+    <string name="acceso">Acceso:</string>
+    <string name="desc_firebase_lockup">Nombre y logo de Firebase</string>
+    <string name="sign_out">Desconectar</string>
+    <string name="disconnect">Desconectar</string>
+    <string name="log_in">Entrar</string>
+    <string name="google_status_fmt">Cuenta: %s</string>
+    <string name="firebase_status_fmt">Usuario: %s</string>
+    <string name="loading">Cargando…</string>
+
+    <!-- contacto -->
+    <string name="contacto_titulo">DEPT. Informatica</string>
+    <string name="contacto_subtitulo">Contacta con nosotros</string>
+    <string name="contacto_telefono">Teléfono</string>
+    <string name="contacto_correo">Correo</string>
+    <string name="contacto_consultas">Mensajería</string>
+    <string name="contacto_habla">Habla con nosotros</string>
+    <string name="contacto_chat">Chat</string>
+
+    <!-- menu principal -->
+    <string name="menuP_web">Página web</string>
+    <string name="menuP_tutoriales">Tutoriales</string>
+    <string name="menuP_contacto">Contacto</string>
+    <string name="menuP_aulas">Disponibilidad \n aulas</string>
+    <string name="menuP_aulasV2">Disponibilidad aulas</string>
+    <string name="menuP_mensajes">Mensajes</string>
+    <string name="menuP_incidencias">Incidencias</string>
+    <string name="menuP_empresas">Empresas\nColaboradoras</string>
+    <string name="menuP_empresasV2">Empreses Colaboradores</string>
+    <string name="menuP_estadoServicios">Servicios</string>
+    <string name="menuP_cafeteria">Cafetería</string>
+
+    <!-- Menu opciones -->
+    <string name="menuP_settings">Configuración</string>
+    <string name="help">Desconectar</string>
+
+    <!-- Activity impresoras -->
+    <string name="tituloEstadoImpr">Estado de las impresoras de Sabadell</string>
+
+    <!-- Settings -->
+    <string name="confTemaTitulo">Usar el tema claro: </string>
+    <string name="confLenguaTitulo">Idioma:</string>
+    <string name="confLenguaDescr">Cambia la lengua de la aplicacion sin cambiar la del telefono</string>
+
+    <!-- Mensajes -->
+    <string name="sugerencias"> Sugerencias </string>
+    <string name="incidencias"> Incidencias</string>
+    <string name="consultas"> Consultas </string>
+    <string name="equipo"> Equipo </string>
+    <string name="titulo"> Título </string>
+    <string name="escanear"> Escanear QR </string>
+    <string name="descripcion"> Descripción </string>
+    <string name="nuevo"> Nuevo </string>
+    <string name="finalizar"> Finalizar </string>
+    <string name="cancelar"> Cancelar </string>
+
+    <!-- Dispoaulas -->
+    <string name="seleccionarhora"> Seleccionar hora </string>
+    <string name="seleccionardia"> Seleccionar día</string>
+    <string name="descrMapa">El mapa muestra la disponibilidad actual de las aulas</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="siguiente">Siguiente</string>
+
+    <!-- Tutoriales -->
+    <string name="visualizaPdf">Visualizar PDF</string>
+
+    <!-- Servicios -->
+    <string name="menuSimpresores">Impresoras</string>
+    <string name="menuSwifi">Wi-Fi</string>
+    <string name="menuSdocs">Google\nDocs</string>
+    <string name="menuScalendar">Google\nCalendar</string>
+    <string name="menuSmail">Gmail</string>
+    <string name="menuScafeteria">Cafetería</string>
+    <string name="estat">Estado:</string>
+
+
+    <!--TITULOS-->
+    <string name="titMenuP">Menú Principal</string>
+    <string name="titContacto">Contacto</string>
+    <string name="titWeb">Página Web</string>
+    <string name="titMensajes">Mesajes</string>
+    <string name="titDispoA">Disponibilidad de aulas</string>
+    <string name="titGLPI">GLPI</string>
+    <string name="titEmpresas">Empresas Colaboradoras</string>
+    <string name="titTutorial">Tutoriales</string>
+    <string name="titServicios">Servicios</string>
+</resources>

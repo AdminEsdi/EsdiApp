@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.usuario.webesdi">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:screenOrientation="sensor"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MenuPrincipal" />
+        <activity android:name=".PaginaWeb" />
+        <activity android:name=".Contacto" />
+        <activity android:name=".DispoAulas" />
+        <activity android:name=".GLPI" />
+        <activity android:name=".Settings" />
+        <activity android:name=".QRscanner" />
+        <activity android:name=".EstadoServicios" />
+
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+        <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+        <uses-permission android:name="android.permission.CALL_PHONE" />
+        <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAwUhDtNOyH1yEDnwGssnVawfls6eiXSfg" />
+
+        <uses-feature
+            android:glEsVersion="0x00020000"
+            android:required="true" />
+
+        <!-- <activity android:name=".GoogleSignInActivity"></activity> -->
+        <activity android:name=".Mensajes" />
+        <activity android:name=".tutoriales.Tutoriales" />
+        <activity android:name=".empresas.Empresas" />
+        <activity android:name=".empresas.EmpresaExtend" />
+        <activity android:name=".VistaPDF" />
+        <activity android:name=".tutoriales.TutorialExtend" />
+        <activity android:name=".Ayuda" />
+        <activity android:name=".tutoriaV2" />
+        <activity
+            android:name=".Cafeteria"
+            android:label="@string/title_activity_cafeteria"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
