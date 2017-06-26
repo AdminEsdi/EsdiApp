@@ -27,15 +27,15 @@
                 android:id="@+id/sign_out_button"
                 android:layout_width="110dp"
                 android:layout_height="35dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
                 android:layout_weight="0.39"
                 android:background="@color/grey_100"
                 android:fontFamily="sans-serif-condensed"
                 android:text="@string/sign_out"
                 android:textColor="@color/letrasgoogle"
                 android:theme="@style/ThemeOverlay.MyDarkButton"
-                android:typeface="normal"
-                android:layout_centerVertical="true"
-                android:layout_centerHorizontal="true" />
+                android:typeface="normal" />
         </RelativeLayout>
 
         <LinearLayout
@@ -63,15 +63,6 @@
                 android:layout_height="116dp"
                 android:contentDescription="@string/desc_firebase_lockup"
                 android:src="@mipmap/noulogoesdi" />
-
-            <TextView
-                android:id="@+id/title_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/title_bottom_margin"
-                android:text="@string/google_title_text"
-                android:theme="@style/ThemeOverlay.MyTitleText"
-                android:layout_weight="0.13" />
 
         </LinearLayout>
 
