@@ -40,7 +40,7 @@ public class MainActivity extends BaseActivity
         setContentView(R.layout.activity_main);
         btnSignIn = (SignInButton)findViewById(R.id.sign_in_button);
         btnSignOut = (Button)findViewById(R.id.sign_out_button);
-        btnInvitado = (Button)findViewById(R.id.sign_out_button);
+        btnInvitado = (Button)findViewById(R.id.btnInvitado);
         btnSignIn2 = (ImageView)findViewById(R.id.google_icon);
 
 /*

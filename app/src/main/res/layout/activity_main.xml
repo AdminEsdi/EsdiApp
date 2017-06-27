@@ -48,7 +48,7 @@
                 android:layout_weight="0.39"
                 android:background="@color/grey_100"
                 android:fontFamily="sans-serif-condensed"
-                android:text="@string/sign_out"
+                android:text="Invitado"
                 android:textColor="@color/letrasgoogle"
                 android:theme="@style/ThemeOverlay.MyDarkButton"
                 android:typeface="normal" />
