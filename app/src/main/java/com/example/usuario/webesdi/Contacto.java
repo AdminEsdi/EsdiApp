@@ -54,7 +54,7 @@ public class Contacto extends BaseActivity implements OnMapReadyCallback {
             @Override
             public void onClick(View v) {
                 Uri num = Uri.parse("tel:937274819");
-                Intent i = new Intent(Intent.ACTION_CALL, num);
+                Intent i = new Intent(Intent.ACTION_DIAL, num);
                 if (ActivityCompat.checkSelfPermission(Contacto.this, android.Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
                     // TODO: Consider calling
                     //    ActivityCompat#requestPermissions

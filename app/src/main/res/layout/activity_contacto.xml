@@ -26,31 +26,9 @@
 
             <android.support.constraint.ConstraintLayout
                 android:layout_width="fill_parent"
-                android:layout_height="155dp">
-
-                <TextView
-                    android:id="@+id/TienesDudas"
-                    android:layout_width="174dp"
-                    android:layout_height="21dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="@string/contacto_subtitulo"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Menu"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/Titulo" />
-
-                <TextView
-                    android:id="@+id/Titulo"
-                    android:layout_width="227dp"
-                    android:layout_height="29dp"
-                    android:layout_marginTop="8dp"
-                    android:gravity="center"
-                    android:text="@string/contacto_titulo"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                >
 
                 <Button
                     android:id="@+id/botontlf"
@@ -67,8 +45,7 @@
                     android:paddingTop="5dp"
                     android:text="@string/contacto_telefono"
                     android:textColor="@color/letrasEsdi"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/TienesDudas" />
+                    app:layout_constraintLeft_toLeftOf="parent"/>
 
                 <Button
                     android:id="@+id/botonmensajeria"
