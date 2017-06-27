@@ -2,6 +2,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.usuario.webesdi.Cafeteria">
+    <item android:id="@+id/languages"
+        android:title="@string/menuP_languages"
+        />
     <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"

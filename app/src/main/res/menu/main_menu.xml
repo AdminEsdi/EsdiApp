@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:id="@+id/configuracion"
-        android:title="@string/menuP_settings"
-        android:showAsAction="ifRoom"/>
+    <item android:id="@+id/languages"
+        android:title="@string/menuP_languages"
+      />
     <item android:id="@+id/desconection"
         android:title="@string/help" />
 </menu>

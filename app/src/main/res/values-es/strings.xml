@@ -37,7 +37,7 @@
     <string name="menuP_cafeteria">Cafetería</string>
 
     <!-- Menu opciones -->
-    <string name="menuP_settings">Configuración</string>
+    <string name="menuP_">Idioma</string>
     <string name="help">Desconectar</string>
 
     <!-- Activity impresoras -->

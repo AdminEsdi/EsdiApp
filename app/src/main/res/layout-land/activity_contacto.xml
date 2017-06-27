@@ -20,7 +20,7 @@
         <LinearLayout
             android:id="@+id/linearLayout2"
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:orientation="horizontal"
             android:weightSum="1"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -38,12 +38,11 @@
                 <Button
                     android:id="@+id/botontlf"
                     android:layout_width="209dp"
-                    android:layout_height="45dp"
+                    android:layout_height="48dp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="8dp"
                     android:layout_marginStart="8dp"
-                    android:layout_marginTop="8dp"
                     android:background="@drawable/botonpulsado"
                     android:drawableLeft="@drawable/telefono"
                     android:drawablePadding="8dp"
@@ -51,12 +50,12 @@
                     android:text="@string/contacto_telefono"
                     android:textColor="@color/letrasEsdi"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/TienesDudas" />
+                    tools:layout_editor_absoluteY="89dp" />
 
                 <Button
                     android:id="@+id/botonchat"
                     android:layout_width="209dp"
-                    android:layout_height="45dp"
+                    android:layout_height="48dp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
                     android:layout_marginLeft="8dp"
@@ -76,10 +75,9 @@
                 <Button
                     android:id="@+id/botonmensajeria"
                     android:layout_width="209dp"
-                    android:layout_height="45dp"
+                    android:layout_height="48dp"
                     android:layout_centerHorizontal="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginEnd="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginStart="8dp"
                     android:layout_weight="0.04"

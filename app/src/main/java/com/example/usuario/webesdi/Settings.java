@@ -43,12 +43,7 @@ public class Settings extends BaseActivity  implements CompoundButton.OnCheckedC
             Intent i = getIntent();
             callingActivity =  i.getStringExtra("callingActivity");
         }
-        boolean appTheme = sp.getBoolean("temaAplicacion", true);
-        themeSwitch = (Switch) findViewById(R.id.themeSwitch);
-        themeSwitch.setChecked(appTheme);
-        if (themeSwitch != null) {
-            themeSwitch.setOnCheckedChangeListener(this);
-        }
+
 
         int posi = sp.getInt("idiomaAplicacion", 1);
         spinner = (Spinner) findViewById(R.id.spinner);
