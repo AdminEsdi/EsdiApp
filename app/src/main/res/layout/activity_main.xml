@@ -76,8 +76,8 @@
             <ImageView
                 android:id="@+id/google_icon"
                 style="@style/ThemeOverlay.FirebaseIcon"
-                android:layout_width="112dp"
-                android:layout_height="116dp"
+                android:layout_width="234dp"
+                android:layout_height="match_parent"
                 android:contentDescription="@string/desc_firebase_lockup"
                 android:src="@mipmap/noulogoesdi" />
 
