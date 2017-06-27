@@ -62,7 +62,7 @@ public class BaseActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
-            case R.id.configuracion:
+            case R.id.languages:
                 lanzarSettings();
                 return true;
             case R.id.desconection:
