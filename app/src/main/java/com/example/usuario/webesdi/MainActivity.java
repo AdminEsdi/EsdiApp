@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.gms.auth.api.Auth;
@@ -27,7 +26,6 @@ public class MainActivity extends BaseActivity
     private String[] admins   = {"ocerezo@esdi.edu.es", "egutierrez@esdi.edu.es"};
     private SignInButton btnSignIn;
     private Button btnSignOut,btnInvitado;
-    private ImageView btnSignIn2;
     String Email,Nombre,rol = "Invitado",URLserver ="http://67.222.58.123/";
 
     private GoogleApiClient apiClient;
@@ -41,7 +39,6 @@ public class MainActivity extends BaseActivity
         btnSignIn = (SignInButton)findViewById(R.id.sign_in_button);
         btnSignOut = (Button)findViewById(R.id.sign_out_button);
         btnInvitado = (Button)findViewById(R.id.btnInvitado);
-        btnSignIn2 = (ImageView)findViewById(R.id.google_icon);
 
 /*
 
@@ -65,13 +62,7 @@ public class MainActivity extends BaseActivity
 
         //Eventos de los botones
 
-        btnSignIn2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(apiClient);
-                startActivityForResult(signInIntent, RC_SIGN_IN);
-            }
-        });
+
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
