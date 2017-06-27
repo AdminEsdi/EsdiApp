@@ -36,6 +36,23 @@
                 android:textColor="@color/letrasgoogle"
                 android:theme="@style/ThemeOverlay.MyDarkButton"
                 android:typeface="normal" />
+
+            <Button
+                android:id="@+id/btnInvitado"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignBottom="@+id/sign_out_button"
+                android:layout_alignTop="@+id/sign_out_button"
+                android:layout_marginStart="13dp"
+                android:layout_toEndOf="@+id/sign_out_button"
+                android:layout_weight="0.39"
+                android:background="@color/grey_100"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/sign_out"
+                android:textColor="@color/letrasgoogle"
+                android:theme="@style/ThemeOverlay.MyDarkButton"
+                android:typeface="normal" />
+
         </RelativeLayout>
 
         <LinearLayout
