@@ -21,14 +21,12 @@ import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
 
-import static android.widget.Toast.LENGTH_LONG;
-
 public class MainActivity extends BaseActivity
         implements GoogleApiClient.OnConnectionFailedListener {
 
     private String[] admins   = {"ocerezo@esdi.edu.es", "egutierrez@esdi.edu.es"};
     private SignInButton btnSignIn;
-    private Button btnSignOut;
+    private Button btnSignOut,btnInvitado;
     private ImageView btnSignIn2;
     String Email,Nombre,rol = "Invitado",URLserver ="http://67.222.58.123/";
 
@@ -42,12 +40,11 @@ public class MainActivity extends BaseActivity
         setContentView(R.layout.activity_main);
         btnSignIn = (SignInButton)findViewById(R.id.sign_in_button);
         btnSignOut = (Button)findViewById(R.id.sign_out_button);
+        btnInvitado = (Button)findViewById(R.id.sign_out_button);
         btnSignIn2 = (ImageView)findViewById(R.id.google_icon);
 
 /*
-        Email="asd@esdi.esdu.es";
-        Nombre="pepe";
-        iniciarActivity();
+
         //Google API Client
 */
         GoogleSignInOptions gso =
@@ -97,7 +94,16 @@ public class MainActivity extends BaseActivity
                         });
             }
         });
+        btnInvitado.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
 
+                Email="invitado@gmail.com";
+                Nombre="Invitado";
+                iniciarActivity();
+
+            }
+        });
 
         updateUI(false);
     }
