@@ -7,7 +7,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.usuario.webesdi.empresas.Empresas;
-
+//hola
 
 public class MenuPrincipal extends BaseActivity {
     ImageView btnpaginaweb;
