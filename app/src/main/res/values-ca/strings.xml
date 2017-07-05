@@ -38,7 +38,7 @@
 
 
     <!-- Menu opciones -->
-    <string name="menuP_settings">Idioma</string>
+    <string name="menuP_languages">Idioma</string>
     <string name="help">Desconectar</string>
 
     <!-- Activity impresoras -->
