@@ -66,9 +66,6 @@
     <string name="aceptar">Accept</string>
     <string name="siguiente">Next</string>
 
-    <!-- Tutoriales -->
-    <string name="visualizaPdf">View PDF</string>
-
     <!-- Servicios -->
     <string name="menuSimpresores">Printers</string>
     <string name="menuSwifi">Wi-Fi</string>
@@ -96,5 +93,198 @@
     <string name="ofertas">Sales</string>
     <string name="menu">Menu</string>
     <string name="carta">Card</string>
+
+    <!-- Tutoriales -->
+    <string name="visualizaPdf">View PDF</string>
+    <string name="utilidad">Utility</string>
+    <string name="utilidadPa">This category contains all the tutorials related to the use of printers and computers</string>
+    <string name="producto">Product</string>
+    <string name="productoPa">Tutorial related to the products</string>
+    <string name="extras">Extras</string>
+    <string name="extrasPa">Category of tutorials where you will find the rest of things</string>
+    <string-array name="array_lista_utilidad">
+        <item>Item1</item>
+        <item>Item2</item>
+        <item>Item3</item>
+        <item>Item4</item>
+        <item>Item5</item>
+        <item>Item6</item>
+        <item>Item7</item>
+        <item>Item8</item>
+        <item>Item9</item>
+        <item>Item10</item>
+        <item>Item11</item>
+        <item>Item12</item>
+        <item>Item13</item>
+        <item>Item14</item>
+    </string-array>
+    <string-array name="array_lista_utilidad_sub">
+        <item>Esto es el subtitulo del Item1</item>
+        <item>Esto es el subtitulo del Item2</item>
+        <item>Esto es el subtitulo del Item3</item>
+        <item>Esto es el subtitulo del Item4</item>
+        <item>Esto es el subtitulo del Item5</item>
+        <item>Esto es el subtitulo del Item6</item>
+        <item>Esto es el subtitulo del Item7</item>
+        <item>Esto es el subtitulo del Item8</item>
+        <item>Esto es el subtitulo del Item9</item>
+        <item>Esto es el subtitulo del Item10</item>
+        <item>Esto es el subtitulo del Item11</item>
+        <item>Esto es el subtitulo del Item12</item>
+        <item>Esto es el subtitulo del Item13</item>
+        <item>Esto es el subtitulo del Item14</item>
+    </string-array>
+    <string-array name="array_lista_producto">
+        <item>Item20</item>
+        <item>Item21</item>
+        <item>Item22</item>
+        <item>Item23</item>
+        <item>Item24</item>
+        <item>Item25</item>
+        <item>Item26</item>
+        <item>Item27</item>
+        <item>Item28</item>
+        <item>Item29</item>
+        <item>Item30</item>
+        <item>Item31</item>
+        <item>Item32</item>
+        <item>Item33</item>
+    </string-array>
+    <string-array name="array_lista_producto_sub">
+        <item>Esto es el subtitulo del Item20</item>
+        <item>Esto es el subtitulo del Item21</item>
+        <item>Esto es el subtitulo del Item22</item>
+        <item>Esto es el subtitulo del Item23</item>
+        <item>Esto es el subtitulo del Item24</item>
+        <item>Esto es el subtitulo del Item25</item>
+        <item>Esto es el subtitulo del Item26</item>
+        <item>Esto es el subtitulo del Item27</item>
+        <item>Esto es el subtitulo del Item28</item>
+        <item>Esto es el subtitulo del Item29</item>
+        <item>Esto es el subtitulo del Item30</item>
+        <item>Esto es el subtitulo del Item31</item>
+        <item>Esto es el subtitulo del Item32</item>
+        <item>Esto es el subtitulo del Item33</item>
+    </string-array>
+    <string-array name="array_lista_extras">
+        <item>Item40</item>
+        <item>Item41</item>
+        <item>Item42</item>
+        <item>Item43</item>
+        <item>Item44</item>
+        <item>Item45</item>
+        <item>Item46</item>
+        <item>Item47</item>
+        <item>Item48</item>
+        <item>Item49</item>
+        <item>Item50</item>
+        <item>Item51</item>
+        <item>Item52</item>
+        <item>Item53</item>
+    </string-array>
+    <string-array name="array_lista_extras_sub">
+        <item>Esto es el subtitulo del Item40</item>
+        <item>Esto es el subtitulo del Item41</item>
+        <item>Esto es el subtitulo del Item42</item>
+        <item>Esto es el subtitulo del Item43</item>
+        <item>Esto es el subtitulo del Item44</item>
+        <item>Esto es el subtitulo del Item45</item>
+        <item>Esto es el subtitulo del Item46</item>
+        <item>Esto es el subtitulo del Item47</item>
+        <item>Esto es el subtitulo del Item48</item>
+        <item>Esto es el subtitulo del Item49</item>
+        <item>Esto es el subtitulo del Item50</item>
+        <item>Esto es el subtitulo del Item51</item>
+        <item>Esto es el subtitulo del Item52</item>
+        <item>Esto es el subtitulo del Item53</item>
+    </string-array>
+    <string-array name="array_lista_general">
+        <item>Item1</item>
+        <item>Item2</item>
+        <item>Item3</item>
+        <item>Item4</item>
+        <item>Item5</item>
+        <item>Item6</item>
+        <item>Item7</item>
+        <item>Item8</item>
+        <item>Item9</item>
+        <item>Item10</item>
+        <item>Item11</item>
+        <item>Item12</item>
+        <item>Item13</item>
+        <item>Item14</item>
+        <item>Item20</item>
+        <item>Item21</item>
+        <item>Item22</item>
+        <item>Item23</item>
+        <item>Item24</item>
+        <item>Item25</item>
+        <item>Item26</item>
+        <item>Item27</item>
+        <item>Item28</item>
+        <item>Item29</item>
+        <item>Item30</item>
+        <item>Item31</item>
+        <item>Item32</item>
+        <item>Item33</item>
+        <item>Item40</item>
+        <item>Item41</item>
+        <item>Item42</item>
+        <item>Item43</item>
+        <item>Item44</item>
+        <item>Item45</item>
+        <item>Item46</item>
+        <item>Item47</item>
+        <item>Item48</item>
+        <item>Item49</item>
+        <item>Item50</item>
+        <item>Item51</item>
+        <item>Item52</item>
+        <item>Item53</item>
+    </string-array>
+    <string-array name="array_lista_general_sub">
+        <item>Esto es el subtitulo del general Item1</item>
+        <item>Esto es el subtitulo del general Item2</item>
+        <item>Esto es el subtitulo del general Item3</item>
+        <item>Esto es el subtitulo del general Item4</item>
+        <item>Esto es el subtitulo del general Item5</item>
+        <item>Esto es el subtitulo del general Item6</item>
+        <item>Esto es el subtitulo del general Item7</item>
+        <item>Esto es el subtitulo del general Item8</item>
+        <item>Esto es el subtitulo del general Item9</item>
+        <item>Esto es el subtitulo del general Item10</item>
+        <item>Esto es el subtitulo del general Item11</item>
+        <item>Esto es el subtitulo del general Item12</item>
+        <item>Esto es el subtitulo del general Item13</item>
+        <item>Esto es el subtitulo del general Item14</item>
+        <item>Esto es el subtitulo del general Item20</item>
+        <item>Esto es el subtitulo del general Item21</item>
+        <item>Esto es el subtitulo del general Item22</item>
+        <item>Esto es el subtitulo del general Item23</item>
+        <item>Esto es el subtitulo del general Item24</item>
+        <item>Esto es el subtitulo del general Item25</item>
+        <item>Esto es el subtitulo del general Item26</item>
+        <item>Esto es el subtitulo del general Item27</item>
+        <item>Esto es el subtitulo del general Item28</item>
+        <item>Esto es el subtitulo del general Item29</item>
+        <item>Esto es el subtitulo del general Item30</item>
+        <item>Esto es el subtitulo del general Item31</item>
+        <item>Esto es el subtitulo del general Item32</item>
+        <item>Esto es el subtitulo del general Item33</item>
+        <item>Esto es el subtitulo del general Item40</item>
+        <item>Esto es el subtitulo del general Item41</item>
+        <item>Esto es el subtitulo del general Item42</item>
+        <item>Esto es el subtitulo del general Item43</item>
+        <item>Esto es el subtitulo del general Item44</item>
+        <item>Esto es el subtitulo del general Item45</item>
+        <item>Esto es el subtitulo del general Item46</item>
+        <item>Esto es el subtitulo del general Item47</item>
+        <item>Esto es el subtitulo del general Item48</item>
+        <item>Esto es el subtitulo del general Item49</item>
+        <item>Esto es el subtitulo del general Item50</item>
+        <item>Esto es el subtitulo del general Item51</item>
+        <item>Esto es el subtitulo del general Item52</item>
+        <item>Esto es el subtitulo del general Item53</item>
+    </string-array>
 
 </resources>

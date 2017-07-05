@@ -38,6 +38,7 @@
         <uses-permission android:name="android.permission.GET_ACCOUNTS" />
         <uses-permission android:name="android.permission.CALL_PHONE" />
         <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -60,7 +61,8 @@
         <activity
             android:name=".Cafeteria"
             android:label="@string/title_activity_cafeteria"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ListaPdf"></activity>
     </application>
 
 </manifest>
