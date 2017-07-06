@@ -1,29 +1,31 @@
-package com.example.usuario.webesdi;
+package com.example.usuario.webesdi.Tutorial;
 
 import android.content.Intent;
 import android.content.res.Resources;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.SearchView;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import com.example.usuario.webesdi.BaseActivity;
+import com.example.usuario.webesdi.PaginaWeb;
+import com.example.usuario.webesdi.R;
 
 public class tutoriaV2 extends BaseActivity {
 
     private ImageView impresora,ps,gimp;
     TextView textView4;
     ArrayAdapter<String> adapter;
-    String [] arrayCountry;
+    MyAdapter myAdapter;
+    String [] titulo;
+    String [] subtitulo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -72,9 +74,18 @@ public class tutoriaV2 extends BaseActivity {
         sc.setVisibility(View.VISIBLE);
 
         Resources res = getResources();
-        arrayCountry = res.getStringArray(R.array.array_lista_general);
-        adapter = new ArrayAdapter<String>(tutoriaV2.this,android.R.layout.simple_list_item_1, arrayCountry);
-        lv.setAdapter(adapter);
+        titulo = res.getStringArray(R.array.array_lista_general);
+        subtitulo = res.getStringArray(R.array.array_lista_general_sub);
+        myAdapter = new MyAdapter(tutoriaV2.this,titulo,subtitulo);
+        lv.setAdapter(myAdapter);
+        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(tutoriaV2.this, VistaPDF.class);
+                intent.putExtra("nombre",titulo[position]);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -104,7 +115,7 @@ public class tutoriaV2 extends BaseActivity {
                     sc.setVisibility(View.INVISIBLE);
                     lv.setVisibility(View.VISIBLE);
                 }
-                adapter.getFilter().filter(newText);
+                myAdapter.getFilter().filter(newText);
 
                 return false;
             }

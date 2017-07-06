@@ -1,16 +1,18 @@
-package com.example.usuario.webesdi;
+package com.example.usuario.webesdi.Tutorial;
+
 import android.app.DownloadManager;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Environment;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.TextView;
 
+import com.example.usuario.webesdi.BaseActivity;
+import com.example.usuario.webesdi.R;
 import com.github.barteksc.pdfviewer.PDFView;
-
 import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
@@ -22,7 +24,7 @@ public class VistaPDF extends BaseActivity {
 
     PDFView pdfView;
     private String nom;
-    private String url="http://www.esdi.es/content/pdf/fent-memoria-2010_2011ok.pdf";
+    private String url;
     private DownloadManager dm;
 
     @Override
@@ -35,13 +37,19 @@ public class VistaPDF extends BaseActivity {
         //Recogemos la variable
         Intent Mainact = getIntent();
         nom = Mainact.getStringExtra("nombre");
+        TextView nuevo = (TextView) findViewById(R.id.recibo);
+        nuevo.setText(nom);
         //Distinguimos la variable dependiendo de que cardview vengamos
-        if(nom.equals("impresora")){
-            url="http://www.esdi.es/content/pdf/musica-y-nuevos-espacios-de-comunicacio--769-n--digital.pdf";
-        }else if (nom.equals("ps")){
-            url="http://www.um.es/aulasenior/saavedrafajardo/apuntes/doc/Manual_photoshop.pdf";
-        }else if (nom.equals("gimp")){
-            url="http://dis.um.es/~jfernand/0506/smig/gimp.pdf";
+        switch (nom) {
+            case "Item1":
+                url = "http://www.esdi.es/content/pdf/musica-y-nuevos-espacios-de-comunicacio--769-n--digital.pdf";
+                break;
+            case "Item2":
+                url = "http://www.um.es/aulasenior/saavedrafajardo/apuntes/doc/Manual_photoshop.pdf";
+                break;
+            case "Item3":
+                url = "http://dis.um.es/~jfernand/0506/smig/gimp.pdf";
+                break;
         }
         //Funcion para cargar un pdf de internet y mostrarlo
         new urlPdf().execute(url);
