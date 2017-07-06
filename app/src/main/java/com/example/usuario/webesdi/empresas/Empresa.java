@@ -6,29 +6,18 @@ package com.example.usuario.webesdi.empresas;
 
 public class Empresa {
 
-
+    private int id;
     private String name;
+    private String pic;
     private String descripcio;
-    private int pic;
-    private int rank;
-    private String explicacionCompleta;
 
-    public Empresa(String name, String descripcio, int rank, int pic){
 
+
+    public Empresa(Integer id,String name, String pic, String descripcio){
+        this.id = id;
         this.name = name;
-        this.descripcio = descripcio;
         this.pic = pic;
-        this.rank = rank;
-
-    }
-
-    public Empresa(String name, String descripcio, int rank, int pic, String fullDescr){
-
-        this.name = name;
         this.descripcio = descripcio;
-        this.pic = pic;
-        this.rank = rank;
-        this.explicacionCompleta = fullDescr;
     }
 
     public String getName() {
@@ -47,26 +36,20 @@ public class Empresa {
         this.descripcio = descripcio;
     }
 
-    public int getPic() {
+    public String getPic() {
         return pic;
     }
 
-    public void setPic(int pic) {
+    public void setPic(String pic) {
         this.pic = pic;
     }
-    public int getRank() {
-        return rank;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setRank(int rank) {
-        this.rank = rank;
-    }
-    public String getExplicacionCompleta() {
-        return explicacionCompleta;
-    }
-
-    public void setExplicacionCompleta(String explicacionCompleta) {
-        this.explicacionCompleta = explicacionCompleta;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
 }
