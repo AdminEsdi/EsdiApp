@@ -63,7 +63,7 @@ public class Empresas extends AppCompatActivity {
 
                         JSONObject object = array.getJSONObject(i);
 
-                        Empresa data = new Empresa(object.getInt("id"),object.getString("nomempresa"),object.getString("fotoempresa"),object.getString("descripcio"));
+                        Empresa data = new Empresa(object.getInt("id"),object.getString("nomempresa"),object.getString("fotoempresa"),object.getString("descripcioCatala"),object.getString("descripcioCastella"),object.getString("descripcioIngles"));
 
                         empresa.add(data);
                     }

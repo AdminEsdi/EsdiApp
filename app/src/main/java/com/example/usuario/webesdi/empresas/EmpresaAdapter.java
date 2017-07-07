@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide;
 import com.example.usuario.webesdi.R;
 
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by PracticasEsdi on 28/04/2017.
@@ -36,12 +37,16 @@ public class EmpresaAdapter extends RecyclerView.Adapter<EmpresaAdapter.ViewHold
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
 
+        String idioma = Locale.getDefault().toString(); // es_ES
         holder.name.setText(listaEmpresas.get(position).getName());
-        holder.descripcio.setText(listaEmpresas.get(position).getDescripcio());
-        Glide.with(context).load(listaEmpresas.get(position).getPic()).into(holder.imageView);
-
+        if (idioma.equals("ca")) {
+            holder.descripcio.setText(listaEmpresas.get(position).getDescripcioCatala());
+        } else if (idioma.equals("es")) {
+            holder.descripcio.setText(listaEmpresas.get(position).getDescripcioCastella());
+        } else if (idioma.equals("en")) {
+            holder.descripcio.setText(listaEmpresas.get(position).getDescripcioAngles());
+        } Glide.with(context).load(listaEmpresas.get(position).getPic()).into(holder.imageView);
     }
-
     @Override
     public int getItemCount() {
         return listaEmpresas.size();
