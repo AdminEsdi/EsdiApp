@@ -88,6 +88,7 @@
     <string name="titEmpresas">Empreses Colaboradores</string>
     <string name="titTutorial">Tutorials</string>
     <string name="titServicios">Serveis</string>
+    <string name="titSeleccionarPdf">Selecciona un PDF</string>
 
     <!-- Tutoriales -->
     <string name="visualizaPdf">Visualitzar PDF</string>

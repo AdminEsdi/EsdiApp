@@ -8,8 +8,6 @@ import android.os.Environment;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.TextView;
-
 import com.example.usuario.webesdi.BaseActivity;
 import com.example.usuario.webesdi.R;
 import com.github.barteksc.pdfviewer.PDFView;
@@ -37,8 +35,6 @@ public class VistaPDF extends BaseActivity {
         //Recogemos la variable
         Intent Mainact = getIntent();
         nom = Mainact.getStringExtra("nombre");
-        TextView nuevo = (TextView) findViewById(R.id.recibo);
-        nuevo.setText(nom);
         //Distinguimos la variable dependiendo de que cardview vengamos
         switch (nom) {
             case "Item1":

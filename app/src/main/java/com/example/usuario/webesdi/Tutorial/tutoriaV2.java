@@ -12,11 +12,14 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ScrollView;
+import android.widget.SearchView;
 import android.widget.TextView;
-
 import com.example.usuario.webesdi.BaseActivity;
 import com.example.usuario.webesdi.PaginaWeb;
 import com.example.usuario.webesdi.R;
+
+import java.util.ArrayList;
+import java.util.Arrays;
 
 public class tutoriaV2 extends BaseActivity {
 
@@ -73,19 +76,16 @@ public class tutoriaV2 extends BaseActivity {
         ScrollView sc = (ScrollView) findViewById(R.id.scrollTutorial);
         sc.setVisibility(View.VISIBLE);
 
+        ArrayList<String> arrayTitulo = new ArrayList<>();
+        arrayTitulo.addAll(Arrays.asList(getResources().getStringArray(R.array.array_lista_general)));
+        adapter = new ArrayAdapter<>(tutoriaV2.this,android.R.layout.simple_list_item_1,arrayTitulo);
+
         Resources res = getResources();
         titulo = res.getStringArray(R.array.array_lista_general);
         subtitulo = res.getStringArray(R.array.array_lista_general_sub);
         myAdapter = new MyAdapter(tutoriaV2.this,titulo,subtitulo);
-        lv.setAdapter(myAdapter);
-        lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent = new Intent(tutoriaV2.this, VistaPDF.class);
-                intent.putExtra("nombre",titulo[position]);
-                startActivity(intent);
-            }
-        });
+        lv.setAdapter(adapter);
+
     }
 
     @Override
@@ -93,8 +93,8 @@ public class tutoriaV2 extends BaseActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.menu_search, menu);
         MenuItem item = menu.findItem(R.id.menuSearch);
-        android.widget.SearchView searchView = (android.widget.SearchView)item.getActionView();
-        searchView.setOnQueryTextListener(new android.widget.SearchView.OnQueryTextListener() {
+        SearchView searchView = (SearchView)item.getActionView();
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
                 Intent intent = new Intent(tutoriaV2.this,PaginaWeb.class);
@@ -114,8 +114,18 @@ public class tutoriaV2 extends BaseActivity {
                 }else {
                     sc.setVisibility(View.INVISIBLE);
                     lv.setVisibility(View.VISIBLE);
+
+                    lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                            Intent intent = new Intent(tutoriaV2.this, VistaPDF.class);
+                            intent.putExtra("nombre",titulo[position]);
+                            startActivity(intent);
+                        }
+                    });
+                    adapter.getFilter().filter(newText);
                 }
-                myAdapter.getFilter().filter(newText);
+
 
                 return false;
             }
