@@ -1,5 +1,6 @@
 package com.example.usuario.webesdi.empresas;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,9 +8,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.example.usuario.webesdi.R;
 
 import java.util.List;
+import java.util.Locale;
 
 /**
  * Created by PracticasEsdi on 28/04/2017.
@@ -17,48 +20,50 @@ import java.util.List;
 
 public class EmpresaAdapter extends RecyclerView.Adapter<EmpresaAdapter.ViewHolder> {
     private List<Empresa> listaEmpresas;
+    private Context context;
 
-    public EmpresaAdapter(List<Empresa> listaEmpresas){
-        this.listaEmpresas = listaEmpresas;
+    public EmpresaAdapter(Context context, List<Empresa> empresa) {
+        this.context = context;
+        this.listaEmpresas = empresa;
     }
 
-    public static class ViewHolder extends RecyclerView.ViewHolder{
-        public TextView txtName,txtDescr, txtRank;
-        public ImageView ivLogo;
-        public ViewHolder(View v) {
-            super(v);
-            txtRank = (TextView)v.findViewById(R.id.tv_rank);
-            txtName = (TextView) v.findViewById(R.id.tv_nombre);
-            txtDescr = (TextView) v.findViewById(R.id.tv_descr);
-            ivLogo = (ImageView) v.findViewById(R.id.iv_logo_empresa);
-        }
-    }
-    //Create new views (invoked by the layout manager)
-    public EmpresaAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    @Override
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
 
-        //Creating a new view
-        View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.empresa_item_list,parent,false);
-
-        //set the view's size, margins, paddings and layout parameters
-
-        ViewHolder vh = new ViewHolder(v);
-        return vh;
-    }
-    public void onBindViewHolder(EmpresaAdapter.ViewHolder holder, int position) {
-
-        // - get element from arraylist at this position
-        // - replace the contents of the view with that element
-
-        Empresa empresa = listaEmpresas.get(position);
-        holder.txtRank.setText(String.valueOf(empresa.getRank()));
-        holder.txtName.setText(empresa.getName());
-        holder.txtDescr.setText(empresa.getDescripcio());
-        holder.ivLogo.setImageResource(empresa.getPic());
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.empresa_item_list,parent,false);
+        return new ViewHolder(itemView);
     }
 
+    @Override
+    public void onBindViewHolder(ViewHolder holder, int position) {
+
+        String idioma = Locale.getDefault().toString(); // es_ES
+        holder.name.setText(listaEmpresas.get(position).getName());
+        if (idioma.equals("ca")) {
+            holder.descripcio.setText(listaEmpresas.get(position).getDescripcioCatala());
+        } else if (idioma.equals("es")) {
+            holder.descripcio.setText(listaEmpresas.get(position).getDescripcioCastella());
+        } else if (idioma.equals("en")) {
+            holder.descripcio.setText(listaEmpresas.get(position).getDescripcioAngles());
+        } Glide.with(context).load(listaEmpresas.get(position).getPic()).into(holder.imageView);
+    }
+    @Override
     public int getItemCount() {
         return listaEmpresas.size();
     }
 
+    public  class ViewHolder extends  RecyclerView.ViewHolder{
+
+        public TextView name;
+        public TextView descripcio;
+        public ImageView imageView;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            name = (TextView) itemView.findViewById(R.id.tv_nombre);
+            imageView = (ImageView) itemView.findViewById(R.id.iv_logo_empresa);
+            descripcio = (TextView) itemView.findViewById(R.id.tv_descr);
+        }
+    }
 }
 

@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.usuario.webesdi.Tutorial.tutoriaV2;
 import com.example.usuario.webesdi.empresas.Empresas;
 
 
@@ -118,7 +119,7 @@ public class MenuPrincipal extends BaseActivity {
         //solo un administrador puede entrar a incidencias
         if (rol.equalsIgnoreCase("Administrador")){
             btnIncidencias.setVisibility(View.VISIBLE);
-            textView4.setVisibility(View.INVISIBLE);
+            textView4.setVisibility(View.VISIBLE);
 
         }else if(rol.equalsIgnoreCase("Invitado")){
             btndispoAulas.setVisibility(View.INVISIBLE);

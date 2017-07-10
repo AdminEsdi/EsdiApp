@@ -38,12 +38,13 @@
         <uses-permission android:name="android.permission.GET_ACCOUNTS" />
         <uses-permission android:name="android.permission.CALL_PHONE" />
         <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyCO4vpOmw40OKRiwjV8UzrIuEwOzZQ0sA0" />
+            android:value="AIzaSyDDR3QV6837NrRWSIibA9XzMdBIV3QvG64" />
 
         <uses-feature
             android:glEsVersion="0x00020000"
@@ -51,16 +52,15 @@
 
         <!-- <activity android:name=".GoogleSignInActivity"></activity> -->
         <activity android:name=".Mensajes" />
-        <activity android:name=".tutoriales.Tutoriales" />
         <activity android:name=".empresas.Empresas" />
         <activity android:name=".empresas.EmpresaExtend" />
-        <activity android:name=".VistaPDF" />
-        <activity android:name=".tutoriales.TutorialExtend" />
-        <activity android:name=".tutoriaV2" />
+        <activity android:name=".Tutorial.VistaPDF" />
+        <activity android:name=".Tutorial.tutoriaV2" />
         <activity
             android:name=".Cafeteria"
             android:label="@string/title_activity_cafeteria"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Tutorial.ListaPdf"></activity>
     </application>
 
 </manifest>

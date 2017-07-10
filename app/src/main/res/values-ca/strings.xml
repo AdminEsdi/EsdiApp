@@ -68,9 +68,6 @@
     <string name="aceptar">Acceptar</string>
     <string name="siguiente">Següent</string>
 
-    <!-- Tutoriales -->
-    <string name="visualizaPdf">Visualitzar PDF</string>
-
     <!-- Servicios -->
     <string name="menuSimpresores">Impressores</string>
     <string name="menuSwifi">Wi-Fi</string>
@@ -91,5 +88,15 @@
     <string name="titEmpresas">Empreses Colaboradores</string>
     <string name="titTutorial">Tutorials</string>
     <string name="titServicios">Serveis</string>
+    <string name="titSeleccionarPdf">Selecciona un PDF</string>
+
+    <!-- Tutoriales -->
+    <string name="visualizaPdf">Visualitzar PDF</string>
+    <string name="utilidad">Utilitat</string>
+    <string name="utilidadPa">Aquesta categoria conté tots els tutorials relacionats amb el us d\'Impresores i ordinadors</string>
+    <string name="producto">Producte</string>
+    <string name="productoPa">Tutorial relacionat amb els productes</string>
+    <string name="extras">Extras</string>
+    <string name="extrasPa">Categoria de tutorials on trobarás la resta de coses</string>
 
 </resources>

@@ -6,29 +6,22 @@ package com.example.usuario.webesdi.empresas;
 
 public class Empresa {
 
-
+    private int id;
     private String name;
-    private String descripcio;
-    private int pic;
-    private int rank;
-    private String explicacionCompleta;
+    private String pic;
+    private String descripcioCatala;
+    private String descripcioCastella;
+    private String descripcioAngles;
 
-    public Empresa(String name, String descripcio, int rank, int pic){
 
+
+    public Empresa(Integer id, String name, String pic, String descripcioCatala, String descripcioCastella, String descripcioAngles){
+        this.id = id;
         this.name = name;
-        this.descripcio = descripcio;
         this.pic = pic;
-        this.rank = rank;
-
-    }
-
-    public Empresa(String name, String descripcio, int rank, int pic, String fullDescr){
-
-        this.name = name;
-        this.descripcio = descripcio;
-        this.pic = pic;
-        this.rank = rank;
-        this.explicacionCompleta = fullDescr;
+        this.descripcioCatala = descripcioCatala;
+        this.descripcioCastella = descripcioCastella;
+        this.descripcioAngles = descripcioAngles;
     }
 
     public String getName() {
@@ -39,34 +32,43 @@ public class Empresa {
         this.name = name;
     }
 
-    public String getDescripcio() {
-        return descripcio;
+    public String getDescripcioCatala() {
+        return descripcioCatala;
     }
 
-    public void setDescripcio(String descripcio) {
-        this.descripcio = descripcio;
+    public void setDescripcioCatala(String descripcioCatala) {
+        this.descripcioCatala = descripcioCatala;
+    }
+    public String getDescripcioCastella() {
+        return descripcioCastella;
     }
 
-    public int getPic() {
+    public void setDescripcioCastella(String descripcioCastella) {
+        this.descripcioCastella = descripcioCastella;
+    }
+    public String getDescripcioAngles() {
+        return descripcioAngles;
+    }
+
+    public void setDescripcioAngles(String descripcioAngles) {
+        this.descripcioAngles = descripcioAngles;
+    }
+
+
+    public String getPic() {
         return pic;
     }
 
-    public void setPic(int pic) {
+    public void setPic(String pic) {
         this.pic = pic;
     }
-    public int getRank() {
-        return rank;
+
+    public Integer getId() {
+        return id;
     }
 
-    public void setRank(int rank) {
-        this.rank = rank;
-    }
-    public String getExplicacionCompleta() {
-        return explicacionCompleta;
-    }
-
-    public void setExplicacionCompleta(String explicacionCompleta) {
-        this.explicacionCompleta = explicacionCompleta;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
 }

@@ -4,7 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.usuario.webesdi.tutoriaV2">
+    tools:context="com.example.usuario.webesdi.Tutorial.tutoriaV2">
+
+    <ListView
+        android:id="@+id/listaPdfInicial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginRight="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginEnd="8dp" />
 
     <ScrollView
         android:layout_width="0dp"
@@ -20,7 +32,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.454"
         android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp">
+        android:layout_marginEnd="8dp"
+        android:id="@+id/scrollTutorial">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,29 +44,29 @@
             <ImageView
                 android:id="@+id/imgImpresora"
                 android:layout_width="match_parent"
-                android:layout_height="148dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="4dp"
+                android:background="@color/tarj1"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/impresora"
-                android:background="@color/tarj1"/>
+                app:srcCompat="@drawable/impresora" />
 
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Impresora"
+                android:background="@color/tarj1"
+                android:text="@string/utilidad"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
-                android:background="@color/tarj1"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Este tutorial es una guia de uso de la impresora"
+                android:text="@string/utilidadPa"
                 android:textAlignment="center"
                 android:textColor="@color/letrasEsdi"
                 android:background="@color/tarj1"
@@ -62,28 +75,28 @@
             <ImageView
                 android:id="@+id/imgPS"
                 android:layout_width="match_parent"
-                android:layout_height="148dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/photoshop"
+                android:background="@color/tarj2"
                 android:paddingTop="3dp"
-                android:background="@color/tarj2"/>
+                app:srcCompat="@drawable/photoshop" />
 
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Photoshop"
+                android:layout_weight="1.60"
+                android:background="@color/tarj2"
+                android:text="@string/producto"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:textSize="24sp"
-                android:layout_weight="1.60"
-                android:background="@color/tarj2"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tutorial para utilizar este gran programa"
+                android:text="@string/productoPa"
                 android:textAlignment="center"
                 android:textColor="@color/letrasEsdi"
                 android:paddingBottom="8dp"
@@ -92,26 +105,26 @@
             <ImageView
                 android:id="@+id/imgGimp"
                 android:layout_width="match_parent"
-                android:layout_height="148dp"
+                android:layout_height="100dp"
                 android:layout_marginTop="16dp"
-                app:srcCompat="@drawable/gimp"
-                android:background="@color/tarj3"/>
+                android:background="@color/tarj3"
+                app:srcCompat="@drawable/gimp" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="GIMP"
-                android:textSize="24dp"
+                android:background="@color/tarj3"
+                android:text="@string/extras"
                 android:textAlignment="center"
                 android:textColor="@color/colorPrimary"
-                android:background="@color/tarj3"/>
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/textView9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tutorial para utilizar este gran programa"
+                android:text="@string/extrasPa"
                 android:textAlignment="center"
                 android:textColor="@color/letrasEsdi"
                 android:padding="8dp"

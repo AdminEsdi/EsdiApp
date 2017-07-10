@@ -67,9 +67,6 @@
     <string name="aceptar">Aceptar</string>
     <string name="siguiente">Siguiente</string>
 
-    <!-- Tutoriales -->
-    <string name="visualizaPdf">Visualizar PDF</string>
-
     <!-- Servicios -->
     <string name="menuSimpresores">Impresoras</string>
     <string name="menuSwifi">Wi-Fi</string>
@@ -90,4 +87,15 @@
     <string name="titEmpresas">Empresas Colaboradoras</string>
     <string name="titTutorial">Tutoriales</string>
     <string name="titServicios">Servicios</string>
+    <string name="titSeleccionarPdf">Selecciona un PDF</string>
+
+    <!-- Tutoriales -->
+    <string name="visualizaPdf">Visualizar PDF</string>
+    <string name="utilidad">Utilidad</string>
+    <string name="utilidadPa">Esta categoria contiene todos los tutoriales relacionados con el uso de impresoras y ordenadores</string>
+    <string name="producto">Producto</string>
+    <string name="productoPa">Tutorial relacionado con los productos</string>
+    <string name="extras">Extras</string>
+    <string name="extrasPa">Categoria de tutoriales donde encontraras el resto de cosas</string>
+
 </resources>

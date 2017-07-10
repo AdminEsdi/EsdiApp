@@ -128,5 +128,4 @@ public class Contacto extends BaseActivity implements OnMapReadyCallback {
         intent.putExtras(b);
         startActivity(intent);
     }
-
 }
