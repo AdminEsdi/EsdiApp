@@ -76,13 +76,26 @@ public class MainActivity extends BaseActivity
             @Override
             public void onClick(View v) {
                 btnSignOut.setVisibility(View.GONE);
-                Auth.GoogleSignInApi.signOut(apiClient).setResultCallback(
+                Auth.GoogleSignInApi.revokeAccess(apiClient).setResultCallback(
+                        new ResultCallback<Status>() {
+                            @Override
+                            public void onResult(Status status) {
+                                if (status.isSuccess()) {
+                                    Toast.makeText(getApplicationContext(), "Ha funcionado", Toast.LENGTH_SHORT).show();
+                                    rol="Invitado";
+                                    updateUI(false);
+                                }else{
+                                    Toast.makeText(getApplicationContext(), "NO ha funcionado", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        });
+                /*Auth.GoogleSignInApi.signOut(apiClient).setResultCallback(
                         new ResultCallback<Status>() {
                             @Override
                             public void onResult(Status status) {
                                 updateUI(false);
                             }
-                        });
+                        });*/
             }
         });
         btnInvitado.setOnClickListener(new View.OnClickListener() {
