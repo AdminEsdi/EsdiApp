@@ -15,7 +15,8 @@ public class Carta extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_carta, container, false);
-
         return rootView;
     }
+
+
 }
