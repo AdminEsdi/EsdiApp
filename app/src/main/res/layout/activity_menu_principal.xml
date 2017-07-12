@@ -239,12 +239,13 @@
                 android:id="@+id/txtCafe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/menuP_cafeteria"
-                android:layout_marginRight="0dp"
-                app:layout_constraintRight_toRightOf="@+id/btnCafe"
                 android:layout_marginLeft="0dp"
-                app:layout_constraintLeft_toLeftOf="@+id/btnCafe"
+                android:layout_marginRight="0dp"
                 android:layout_marginTop="8dp"
+                android:text="@string/menuP_cafeteria"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="@+id/btnCafe"
+                app:layout_constraintRight_toRightOf="@+id/btnCafe"
                 app:layout_constraintTop_toBottomOf="@+id/btnCafe" />
 
         </android.support.constraint.ConstraintLayout>

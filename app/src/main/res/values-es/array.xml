@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- Lista de lenguas para la configuracion -->
-    <string-array name="listArray">
-        <item>Inglés</item>
-        <item>Catalán</item>
-        <item>Español</item>
-    </string-array>
+
     <!-- Lista de valores para la configuracion de lenguas-->
     <string-array name="listValues">
         <item>1</item>
