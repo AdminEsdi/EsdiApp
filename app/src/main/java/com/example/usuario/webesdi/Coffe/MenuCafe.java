@@ -1,8 +1,15 @@
 package com.example.usuario.webesdi.Coffe;
 
 
+import android.content.res.Resources;
+import android.graphics.Rect;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,44 +17,78 @@ import android.view.ViewGroup;
 import com.example.usuario.webesdi.R;
 import com.github.barteksc.pdfviewer.PDFView;
 
-public class MenuCafe extends Fragment{
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
-    PDFView pdfView;
-    private String nom;
-    private String url="http://www.esdi.es/content/pdf/fent-memoria-2010_2011ok.pdf";
+import java.io.IOException;
+import java.math.BigDecimal;
+import java.util.ArrayList;
+import java.util.List;
+
+import okhttp3.OkHttpClient;
+
+public class MenuCafe extends Fragment{
+    private RecyclerView recyclerView;
+    private LinearLayoutManager linearLayoutManager;
+    private AdaptadorMenu adapter;
+    private List<Menu> menu;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_carta, container, false);
-        /*new urlPdf().execute(url);
-        pdfView = (PDFView) getActivity().findViewById(R.id.pdfView);*/
-
+        View rootView = inflater.inflate(R.layout.fragment_menu, container, false);
+        recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view_menu);
+        menu  = new ArrayList<>();
+        load_data_from_server(0);
+        linearLayoutManager = new LinearLayoutManager(getContext());
+        recyclerView.setLayoutManager(linearLayoutManager);
+        adapter = new AdaptadorMenu(getContext(),menu);
+        recyclerView.setAdapter(adapter);
         return rootView;
     }
+    private void load_data_from_server(int id) {
 
-/*
-    class urlPdf extends AsyncTask<String,Void,InputStream> {
+        AsyncTask<Integer,Void,Void> task = new AsyncTask<Integer, Void, Void>() {
+            @Override
+            protected Void doInBackground(Integer... integers) {
 
-        @Override
-        protected InputStream doInBackground(String... strings) {
-            InputStream is = null;
-            try{
-                URL url = new URL(strings[0]);
-                HttpURLConnection urlConnection = (HttpURLConnection)url.openConnection();
-                if(urlConnection.getResponseCode()==200){
-                    is=new BufferedInputStream(urlConnection.getInputStream());
+                OkHttpClient client = new OkHttpClient();
+                okhttp3.Request request = new okhttp3.Request.Builder()
+                        .url("http://67.222.58.123/ddt/sql/menuBar.php")
+                        .build();
+                try {
+                    okhttp3.Response response = client.newCall(request).execute();
+
+                    JSONArray array = new JSONArray(response.body().string());
+
+                    for (int i=0; i<array.length(); i++){
+
+                        JSONObject object = array.getJSONObject(i);
+
+
+                        Menu data = new Menu(object.getInt("id"),object.getString("setmana"),object.getString("diasetmanaCatala"),object.getString("diasetmanaCastella"),object.getString("diasetmanaAngles"),object.getString("primerPlatCatala"),object.getString("segonPlatCatala"),object.getString("postresCatala"),object.getString("primerPlatCastella"),object.getString("segonPlatCastella"),object.getString("postresCastella"),object.getString("primerPlatAngles"),object.getString("segonPlatAngles"),object.getString("postresAngles"));
+
+                        menu.add(data);
+                    }
+
+
+
+                } catch (IOException e) {
+                    e.printStackTrace();
+                } catch (JSONException e) {
+                    System.out.println("End of content");
                 }
-            }
-            catch (IOException e){
                 return null;
             }
-            return is;
-        }
 
-        @Override
-        protected void onPostExecute(InputStream is){
-            pdfView.fromStream(is).load();
-        }
-    }*/
+            @Override
+            protected void onPostExecute(Void aVoid) {
+                adapter.notifyDataSetChanged();
+            }
+        };
+
+        task.execute(id);
+    }
+
 }
