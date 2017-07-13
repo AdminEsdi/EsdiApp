@@ -94,6 +94,9 @@
     <string name="ofertas">Sales</string>
     <string name="menu">Menu</string>
     <string name="carta">Card</string>
+    <string name="primerplat">1st plate</string>
+    <string name="segonplat">2nd plate</string>
+    <string name="postres">Dessert</string>
 
     <!-- Tutorials -->
     <string name="visualizaPdf">View PDF</string>

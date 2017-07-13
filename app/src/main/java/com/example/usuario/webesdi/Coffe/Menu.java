@@ -6,7 +6,7 @@ package com.example.usuario.webesdi.Coffe;
 
 public class Menu {
 
-    private int idMenjar;
+    private int idMenu;
     private String diaCatala;
     private String diaCastella;
     private String diaAngles;
@@ -21,8 +21,8 @@ public class Menu {
     private String postreMenuCastella;
     private String postreMenuAngles;
 
-    public Menu(int idMenjar, String diaCatala, String diaCastella, String diaAngles, String setmana , String primerPlatMenuCatala, String primerPlatMenuCastella, String primerPlatMenuAngles, String segonPlatMenuCatala, String segonPlatMenuCastella, String segonPlatMenuAngles, String postreMenuCatala, String postreMenuCastella, String postreMenuAngles) {
-        this.idMenjar = idMenjar;
+    public Menu(int idMenu,  String setmana, String diaCatala, String diaCastella, String diaAngles , String primerPlatMenuCatala,  String segonPlatMenuCatala,  String postreMenuCatala, String primerPlatMenuCastella,  String segonPlatMenuCastella, String postreMenuCastella, String primerPlatMenuAngles, String segonPlatMenuAngles, String postreMenuAngles) {
+        this.idMenu = idMenu;
         this.diaCatala = diaCatala;
         this.diaCastella = diaCastella;
         this.diaAngles = diaAngles;
@@ -38,12 +38,12 @@ public class Menu {
         this.postreMenuAngles = postreMenuAngles;
     }
 
-    public int getIdMenjar() {
-        return idMenjar;
+    public int getIdMenu() {
+        return idMenu;
     }
 
-    public void setIdMenjar(int idMenjar) {
-        this.idMenjar = idMenjar;
+    public void setIdMenu(int idMenu) {
+        this.idMenu = idMenu;
     }
 
     public String getDiaCatala() {

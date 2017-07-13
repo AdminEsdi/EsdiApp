@@ -98,4 +98,12 @@
     <string name="extras">Extras</string>
     <string name="extrasPa">Categoria de tutoriales donde encontraras el resto de cosas</string>
 
+    <!--Cafeteria-->
+    <string name="ofertas">Ofertas</string>
+    <string name="menu">Menu</string>
+    <string name="carta">Carta</string>
+    <string name="primerplat">1r plato</string>
+    <string name="segonplat">2n plato</string>
+    <string name="postres">Postres</string>
+
 </resources>

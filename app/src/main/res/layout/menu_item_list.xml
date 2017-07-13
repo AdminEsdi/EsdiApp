@@ -28,23 +28,45 @@
 
             <TextView
                 android:id="@+id/tv_dia"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/iv_logo_empresa"
                 android:gravity="center"
-                android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
+            <TextView
+                android:id="@+id/tv_text_1rplat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_dia"
+                android:gravity="center"
+                android:text="@string/primerplat"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_primerPlat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/iv_logo_empresa"
                 android:gravity="center"
                 android:text="Pillow Talk"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_text_1rplat"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:id="@+id/tv_text_2nplat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_primerPlat"
+                android:gravity="center"
+                android:text="@string/segonplat"
                 android:textAlignment="center"
                 android:textAllCaps="true"
                 android:textColor="@color/colorAccent"
@@ -55,21 +77,38 @@
                 android:id="@+id/tv_segonPlat"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_nombre"
-                android:layout_marginTop="10dp"
-                android:text="Zayn"
+                android:gravity="center"
+                android:text="Pillow Talk"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_text_2nplat"
+                android:layout_alignParentStart="true" />
 
-                android:textAlignment="textStart"
-                android:textSize="18sp" />
+            <TextView
+                android:id="@+id/tv_text_postres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_segonPlat"
+                android:gravity="center"
+                android:text="@string/postres"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
             <TextView
                 android:id="@+id/tv_postres"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_segonPlat"
-                android:layout_marginTop="10dp"
-                android:text="Zayn"
-                android:textAlignment="textStart"
-                android:textSize="18sp" />
+                android:gravity="center"
+                android:text="Pillow Talk"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@+id/tv_text_postres"
+                android:layout_alignParentStart="true" />
         </RelativeLayout>
     </android.support.v7.widget.CardView>
 </RelativeLayout>
