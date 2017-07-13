@@ -65,7 +65,7 @@
                 android:id="@+id/tv_postres"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/tv_SegonPlat"
+                android:layout_below="@id/tv_segonPlat"
                 android:layout_marginTop="10dp"
                 android:text="Zayn"
                 android:textAlignment="textStart"
