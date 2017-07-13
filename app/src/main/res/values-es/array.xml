@@ -34,4 +34,63 @@
         <item>.</item>
     </string-array>
 
+    <string-array name="listaCarta">
+        <item>Bocadillos frios</item>
+        <item>Bocata chorizo</item>
+        <item>Bocata jamon</item>
+        <item>Bocata jamon</item>
+        <item>Bocata jamon</item>
+        <item>Bocata jamon</item>
+        <item>Bocadillos calientes</item>
+        <item>Bocata beicon</item>
+        <item>Bocata beicon</item>
+        <item>Bocata beicon</item>
+        <item>Bocata beicon</item>
+        <item>Bocata beicon</item>
+        <item>Bocata beicon</item>
+        <item>Bebida</item>
+        <item>Agua 0,33</item>
+        <item>Agua 0,50</item>
+        <item>Agua 1</item>
+    </string-array>
+
+    <string-array name="listaCartaContenido">
+        <item></item>
+        <item>Chorizo de caceres</item>
+        <item>Jamon pata negra</item>
+        <item>Jamon 5 Jotass</item>
+        <item>Jamon york</item>
+        <item>Jamon del pryca</item>
+        <item></item>
+        <item>Beicon+tomate+lechuga</item>
+        <item>Beicon+tomate+lechuga</item>
+        <item>Beicon+tomate+lechuga</item>
+        <item>Beicon+tomate+lechuga</item>
+        <item>Beicon+tomate+lechuga</item>
+        <item>Beicon+tomate+lechuga</item>
+        <item></item>
+        <item>Agua mineral con sodio</item>
+        <item>Agua mineral con magnesio</item>
+        <item>Agua mineral del grifo</item>
+    </string-array>
+
+    <string-array name="listaCartaPrecio">
+        <item>Normal/Grande|</item>
+        <item>1,50/2,30|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>Normal/Grande|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>Precio|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+        <item>1,70/2,50|</item>
+    </string-array>
 </resources>
