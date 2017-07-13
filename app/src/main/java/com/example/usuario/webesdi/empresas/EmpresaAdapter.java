@@ -38,6 +38,7 @@ public class EmpresaAdapter extends RecyclerView.Adapter<EmpresaAdapter.ViewHold
     public void onBindViewHolder(ViewHolder holder, int position) {
 
         String idioma = Locale.getDefault().toString(); // es_ES
+        holder.nom.setText(listaEmpresas.get(position).getName());
         if (idioma.equals("ca")) {
             holder.descripcio.setText(listaEmpresas.get(position).getDescripcioCatala());
         } else if (idioma.equals("es")) {
@@ -52,13 +53,15 @@ public class EmpresaAdapter extends RecyclerView.Adapter<EmpresaAdapter.ViewHold
     }
 
     public  class ViewHolder extends  RecyclerView.ViewHolder{
-
+        public TextView nom;
         public TextView descripcio;
         public ImageView imageView;
 
         public ViewHolder(View itemView) {
             super(itemView);
+
             imageView = (ImageView) itemView.findViewById(R.id.iv_logo_empresa);
+            nom = (TextView) itemView.findViewById(R.id.tv_nombre);
             descripcio = (TextView) itemView.findViewById(R.id.tv_descr);
         }
     }
