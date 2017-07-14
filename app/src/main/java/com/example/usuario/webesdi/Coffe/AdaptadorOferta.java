@@ -61,6 +61,7 @@ import java.util.Locale;
                 super(itemView);
                 nom = (TextView) itemView.findViewById(R.id.tv_nommenjar);
                 imageView = (ImageView) itemView.findViewById(R.id.iv_imatge_menjar);
+                imageView.setScaleType(ImageView.ScaleType.CENTER_CROP);
                 preu = (TextView) itemView.findViewById(R.id.tv_preu);
             }
         }

@@ -27,9 +27,13 @@
 
 
             <TextView
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
                 android:id="@+id/tv_dia"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@color/letrasEsdi"
                 android:gravity="center"
                 android:textAllCaps="true"
                 android:textSize="18sp"
