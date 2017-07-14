@@ -290,5 +290,10 @@
         <item>Esto es el subtitulo del general Item52</item>
         <item>Esto es el subtitulo del general Item53</item>
     </string-array>
+    <string-array name="listArray">
+        <item>English</item>
+        <item>Catalan</item>
+        <item>Spanish</item>
+    </string-array>
 
 </resources>

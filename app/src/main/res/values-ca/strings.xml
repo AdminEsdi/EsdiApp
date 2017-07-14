@@ -107,4 +107,10 @@
     <string name="segonplat">2n plat</string>
     <string name="postres">Postres</string>
 
+    <string-array name="listArray">
+        <item>Angles</item>
+        <item>Català</item>
+        <item>Espanyol</item>
+    </string-array>
+
 </resources>
