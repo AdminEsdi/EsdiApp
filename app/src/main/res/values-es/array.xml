@@ -36,61 +36,226 @@
 
     <string-array name="listaCarta">
         <item>Bocadillos frios</item>
-        <item>Bocata chorizo</item>
-        <item>Bocata jamon</item>
-        <item>Bocata jamon</item>
-        <item>Bocata jamon</item>
-        <item>Bocata jamon</item>
+        <item>Bocadillo de Jamón york</item>
+        <item>Bocadillo de Jamón york y queso</item>
+        <item>Bocadillo de Pavo</item>
+        <item>Bocadillo de Pavo y queso</item>
+        <item>Bocadillo de Fuet</item>
+        <item>Bocadillo de Salchichón</item>
+        <item>Bocadillo de Chorizo</item>
+        <item>Bocadillo de Butifarra blanca</item>
+        <item>Bocadillo de Jamón país</item>
+        <item>Bocadillo de Queso</item>
+        <item>Bocadillo de Atún</item>
+        <item>Bocadillo de Sobrasada</item>
+        <item>Bocadillo de Nocilla</item>
         <item>Bocadillos calientes</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bebida</item>
-        <item>Agua 0,33</item>
-        <item>Agua 0,50</item>
-        <item>Agua 1</item>
+        <item>Bocadillo de Tortilla</item>
+        <item>Bocadillo de Tortilla de patatas</item>
+        <item>Bocadillo de Frankfurt</item>
+        <item>Bocadillo de Beicon</item>
+        <item>Bocadillo de Sobrasada</item>
+        <item>Bocadillo de Franckfurt y queso</item>
+        <item>Bocadillo de Beicon y queso</item>
+        <item>Bocadillo de Sobrasada y queso</item>
+        <item>Bocadillo de Lomo</item>
+        <item>Bocadillo de Pollo</item>
+        <item>Bocadillo de Bacon</item>
+        <item>Bocadillo de Lomo y queso</item>
+        <item>Bocadillo de Pollo y queso</item>
+        <item>Bocadillo de Bacon y queso</item>
+        <item>Bikini York y queso</item>
+        <item>Bikini Pavo y queso</item>
+        <item>Hamburguesa Sola</item>
+        <item>Hamburguesa Especial</item>
+        <item>Bocadillos especiales ESDi</item>
+        <item>Hamburguesa</item>
+        <item>Lomo</item>
+        <item>Pollo</item>
+        <item>Vegetal</item>
+        <item>Jamón del país</item>
+        <item>Bebídas</item>
+        <item>Agua 0,33 ML</item>
+        <item>Agua 0,50 ML</item>
+        <item>Agua 1,5 L</item>
+        <item>Agua con gas</item>
+        <item>Cacaolat</item>
+        <item>Zumo de Naranja</item>
+        <item>Zumo Natural</item>
+        <item>Fontvella Levite</item>
+        <item>Cocacola normal/zero/light</item>
+        <item>Fanta naranja/limon</item>
+        <item>Kas</item>
+        <item>Nestea</item>
+        <item>Acuarius/7up/Sprite</item>
+        <item>Red Bull</item>
+        <item>Cafés</item>
+        <item>Café</item>
+        <item>Café con hielo</item>
+        <item>Cortado</item>
+        <item>Cortado con hielo</item>
+        <item>Café con Leche</item>
+        <item>Café con Leche y hielo</item>
+        <item>Infusiones</item>
+        <item>Vaso de Leche</item>
+        <item>Leche con Colacao</item>
+        <item>Chocolate</item>
+        <item>Café con Leche de soja o sin Lactosa</item>
+        <item>Pasta</item>
+        <item>Croissant</item>
+        <item>Croissant Chocolate</item>
+        <item>Donut</item>
+        <item>Pasta Rellena</item>
+        <item>Magdalena</item>
     </string-array>
 
     <string-array name="listaCartaContenido">
         <item></item>
-        <item>Chorizo de caceres</item>
-        <item>Jamon pata negra</item>
-        <item>Jamon 5 Jotass</item>
-        <item>Jamon york</item>
-        <item>Jamon del pryca</item>
+        <item>Jamón dulce</item>
+        <item>Jamón dulce + queso</item>
+        <item>Pavo</item>
+        <item>Pavo + Queso</item>
+        <item>Fuet</item>
+        <item>Salchichón</item>
+        <item>Chorizo</item>
+        <item>Butifarra blanca</item>
+        <item>Jamón salado</item>
+        <item>Queso</item>
+        <item>Atún</item>
+        <item>Sobrasada</item>
+        <item>Chocolate</item>
         <item></item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
+        <item>Tortilla</item>
+        <item>Tortilla de patatas</item>
+        <item>Frankfurt</item>
+        <item>Beicon</item>
+        <item>Sobrasada</item>
+        <item>Franckfurt + queso</item>
+        <item>Beicon + queso</item>
+        <item>Sobrasada + queso</item>
+        <item>Lomo</item>
+        <item>Pollo</item>
+        <item>Bacon</item>
+        <item>Lomo + queso</item>
+        <item>Pollo + queso</item>
+        <item>Bacon + queso</item>
+        <item>Bikini York + queso</item>
+        <item>Bikini Pavo + queso</item>
+        <item>Hamburguesa Sola</item>
+        <item>Hamburguesa Especial</item>
         <item></item>
-        <item>Agua mineral con sodio</item>
-        <item>Agua mineral con magnesio</item>
-        <item>Agua mineral del grifo</item>
+        <item>Pan de coca + Lechuga + Tomate + Huevo duro + Queso + Mayonesa + Cebolla caramelizada</item>
+        <item>Pan de coca + Lechuga + Tomate + Huevo duro + Queso + Mayonesa + Cebolla caramelizada</item>
+        <item>Pan de coca + Lechuga + Tomate + Huevo duro + Queso + Mayonesa + Cebolla caramelizada</item>
+        <item>Pan de coca + Atún/Pavo/Jamón dulce/lechuga + Tomate + Huevo duro + Queso + Mayonesa</item>
+        <item>Pan de coca + Tomate + Queso brie</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 
     <string-array name="listaCartaPrecio">
         <item>Normal/Grande|</item>
-        <item>1,50/2,30|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
+        <item>1,30/2,60€</item>
+        <item>1,80/3,60€</item>
+        <item>1,60/3,20€</item>
+        <item>2,10/4,20€</item>
+        <item>1,55/3,10€</item>
+        <item>1,55/3,10€</item>
+        <item>1,55/3,10€</item>
+        <item>1,55/3,10€</item>
+        <item>1,95/3,90€</item>
+        <item>1,75/3,50€</item>
+        <item>1,90/3,80€</item>
+        <item>1,30/2,60€</item>
+        <item>1,20/2,40€</item>
         <item>Normal/Grande|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
+        <item>1,30/2,60€</item>
+        <item>1,85/3,70€</item>
+        <item>1,90/3,80€</item>
+        <item>1,90/3,80€</item>
+        <item>1,90/3,80€</item>
+        <item>2,25/4,50€</item>
+        <item>2,25/4,50€</item>
+        <item>2,25/4,50€</item>
+        <item>1,90/3,80€</item>
+        <item>1,90/3,80€</item>
+        <item>1,90/3,80€</item>
+        <item>2,25/4,50€</item>
+        <item>2,25/4,50€</item>
+        <item>2,25/4,50€</item>
+        <item>1,95€</item>
+        <item>2,10€</item>
+        <item>2,20€</item>
+        <item>3,65€</item>
         <item>Precio|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
+        <item>4,70€</item>
+        <item>4,70€</item>
+        <item>4,70€</item>
+        <item>3,70€</item>
+        <item>4,00€</item>
+        <item>Precio|</item>
+        <item>0,60€</item>
+        <item>0,70€</item>
+        <item>1,10€</item>
+        <item>1,40€</item>
+        <item>1,80€</item>
+        <item>1,50€</item>
+        <item>2,00€</item>
+        <item>1,60€</item>
+        <item>1,25€</item>
+        <item>1,10€</item>
+        <item>1,10€</item>
+        <item>1,35€</item>
+        <item>1,35€</item>
+        <item>1,90€</item>
+        <item>Precio|</item>
+        <item>0,90€</item>
+        <item>1,00€</item>
+        <item>1,10€</item>
+        <item>1,20€</item>
+        <item>1,20€</item>
+        <item>1,30€</item>
+        <item>1,30€</item>
+        <item>0,80€</item>
+        <item>1,20€</item>
+        <item>1,30€</item>
+        <item>1,30€</item>
+        <item>Precio|</item>
+        <item>0,90€</item>
+        <item>1,00€</item>
+        <item>1,00€</item>
+        <item>1,55€</item>
+        <item>1,15€</item>
     </string-array>
 </resources>

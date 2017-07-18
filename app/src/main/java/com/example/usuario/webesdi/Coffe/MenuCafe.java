@@ -15,14 +15,12 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.usuario.webesdi.R;
-import com.github.barteksc.pdfviewer.PDFView;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -59,21 +57,12 @@ public class MenuCafe extends Fragment{
                         .build();
                 try {
                     okhttp3.Response response = client.newCall(request).execute();
-
                     JSONArray array = new JSONArray(response.body().string());
-
                     for (int i=0; i<array.length(); i++){
-
                         JSONObject object = array.getJSONObject(i);
-
-
                         Menu data = new Menu(object.getInt("id"),object.getString("setmana"),object.getString("diasetmanaCatala"),object.getString("diasetmanaCastella"),object.getString("diasetmanaAngles"),object.getString("primerPlatCatala"),object.getString("segonPlatCatala"),object.getString("postresCatala"),object.getString("primerPlatCastella"),object.getString("segonPlatCastella"),object.getString("postresCastella"),object.getString("primerPlatAngles"),object.getString("segonPlatAngles"),object.getString("postresAngles"));
-
                         menu.add(data);
                     }
-
-
-
                 } catch (IOException e) {
                     e.printStackTrace();
                 } catch (JSONException e) {

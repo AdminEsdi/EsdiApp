@@ -27,8 +27,8 @@
 
             <ImageView
                 android:id="@+id/iv_imatge_menjar"
-                android:layout_width="match_parent"
-                android:layout_height="98dp"
+                android:layout_width="0dp"
+                android:layout_height="346dp"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:gravity="center"
@@ -37,13 +37,12 @@
                 tools:layout_conversion_absoluteWidth="346dp"
                 tools:layout_conversion_absoluteHeight="346dp"
                 card_view:layout_constraintTop_toTopOf="parent"
-                android:layout_marginLeft="0dp"
                 card_view:layout_constraintLeft_toLeftOf="parent" />
 
             <TextView
                 android:id="@+id/tv_nommenjar"
-                android:layout_width="106dp"
-                android:layout_height="25dp"
+                android:layout_width="346dp"
+                android:layout_height="21dp"
                 android:gravity="center"
                 android:text="Pillow Talk"
                 android:textAlignment="center"
@@ -55,17 +54,15 @@
                 tools:layout_conversion_absoluteWidth="346dp"
                 tools:layout_conversion_absoluteX="7dp"
                 tools:layout_conversion_absoluteY="15dp"
-                android:layout_marginTop="0dp"
                 card_view:layout_constraintTop_toBottomOf="@+id/iv_imatge_menjar"
-                android:layout_marginLeft="0dp"
                 card_view:layout_constraintLeft_toLeftOf="@+id/iv_imatge_menjar"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 android:layout_marginBottom="5dp" />
 
             <TextView
                 android:id="@+id/tv_preu"
-                android:layout_width="32dp"
-                android:layout_height="25dp"
+                android:layout_width="346dp"
+                android:layout_height="21dp"
                 android:text="Zayn"
                 android:textAlignment="textStart"
                 android:textSize="18sp"
@@ -74,10 +71,7 @@
                 tools:layout_conversion_absoluteWidth="346dp"
                 tools:layout_conversion_absoluteHeight="21dp"
                 card_view:layout_constraintLeft_toRightOf="@+id/tv_nommenjar"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="0dp"
-                card_view:layout_constraintTop_toBottomOf="@+id/iv_imatge_menjar"
-                tools:layout_editor_absoluteX="105dp" />
+                card_view:layout_constraintTop_toBottomOf="@+id/iv_imatge_menjar" />
             <TextView
                 android:id="@+id/tv_euro"
                 android:layout_width="wrap_content"

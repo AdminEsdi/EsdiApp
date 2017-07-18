@@ -36,62 +36,227 @@
     </string-array>
 
     <string-array name="listaCarta">
-        <item>Bocadillos fríos</item>
-        <item>Jamón Yok</item>
-        <item>Jamon</item>
-        <item>Bocata jamon</item>
-        <item>Bocata jamon</item>
-        <item>Bocata jamon</item>
-        <item>Bocadillos calientes</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bocata beicon</item>
-        <item>Bebida</item>
-        <item>Agua 0,33</item>
-        <item>Agua 0,50</item>
-        <item>Agua 1</item>
+        <item>Entrepà fred</item>
+        <item>Entrepà de pernil york</item>
+        <item>Entrepà de pernil york i formatge</item>
+        <item>Entrepà de Gall dindi</item>
+        <item>Entrepà de Gall dindi i formatge</item>
+        <item>Entrepà de Fuet</item>
+        <item>Entrepà de Llonganissa</item>
+        <item>Entrepà de xoriço</item>
+        <item>Entrepà de Botifarra blanca</item>
+        <item>Entrepà de Pernil país</item>
+        <item>Entrepà de Formatge</item>
+        <item>Entrepà de Tonyina</item>
+        <item>Entrepà de Sobrassada</item>
+        <item>Entrepà de Nocilla</item>
+        <item>Entrepà calent</item>
+        <item>Entrepà de Truita</item>
+        <item>Entrepà de Truita de patates</item>
+        <item>Entrepà de Frankfurt</item>
+        <item>Entrepà de Bacó</item>
+        <item>Entrepà de Sobrassada</item>
+        <item>Entrepà de Frankfurt i formatge</item>
+        <item>Entrepà de Beicon i formatge</item>
+        <item>Entrepà de Sobrasada i formatge</item>
+        <item>Entrepà de Llom</item>
+        <item>Entrepà de Pollastre</item>
+        <item>Entrepà de Bacó</item>
+        <item>Entrepà de Llomo i formatge</item>
+        <item>Entrepà de Pollastre i formatge</item>
+        <item>Entrepà de Bacó i formatge</item>
+        <item>Bikini York i formatge</item>
+        <item>Bikini Gall dindi i formatge</item>
+        <item>Hamburguesa Sola</item>
+        <item>Hamburguesa Especial</item>
+        <item>Entrepàs especials ESDi</item>
+        <item>Hamburguesa</item>
+        <item>Llom</item>
+        <item>Pollastre</item>
+        <item>Vegetal</item>
+        <item>Pernil del país</item>
+        <item>Begudes</item>
+        <item>Aigua 0,33 ML</item>
+        <item>Aigua 0,50 ML</item>
+        <item>Aigua 1,5 L</item>
+        <item>Aigua amb gas</item>
+        <item>Cacaolat</item>
+        <item>Suc de Tronja</item>
+        <item>Suc Natural</item>
+        <item>Fontvella Levite</item>
+        <item>Cocacola normal/zero/light</item>
+        <item>Fanta tronja/llimona</item>
+        <item>Kas</item>
+        <item>Nestea</item>
+        <item>Acuarius/7up/Sprite</item>
+        <item>Red Bull</item>
+        <item>Cafès</item>
+        <item>Cafè</item>
+        <item>Cafè amb gel</item>
+        <item>Tallat</item>
+        <item>Tallat amb gel</item>
+        <item>Cafè amb llet</item>
+        <item>Cafè amb llet i gel</item>
+        <item>Infusions</item>
+        <item>Got de Llet</item>
+        <item>Llet amb Colacao</item>
+        <item>Xocolata</item>
+        <item>Cafè amb llet de soja o sense Lactosa</item>
+        <item>Pastes</item>
+        <item>Croissant</item>
+        <item>Croissant xocolata</item>
+        <item>Donut</item>
+        <item>Pasta farcida</item>
+        <item>Magdalena</item>
     </string-array>
 
     <string-array name="listaCartaContenido">
         <item></item>
-        <item>Chorizo de caceres</item>
-        <item>Jamon pata negra</item>
-        <item>Jamon 5 Jotass</item>
-        <item>Jamon york</item>
-        <item>Jamon del pryca</item>
+        <item>Pernil york</item>
+        <item>Pernil york + formatge</item>
+        <item>Gall dindi</item>
+        <item>Gall dindi + formatge</item>
+        <item>Fuet</item>
+        <item>Llonganissa</item>
+        <item>Xoriço</item>
+        <item>Botifarra blanca</item>
+        <item>Pernil país</item>
+        <item>Formatge</item>
+        <item>Tonyina</item>
+        <item>Sobrassada</item>
+        <item>Nocilla</item>
         <item></item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
-        <item>Beicon+tomate+lechuga</item>
+        <item>Truita</item>
+        <item>Truita de patates</item>
+        <item>Frankfurt</item>
+        <item>Bacó</item>
+        <item>Sobrassada</item>
+        <item>Frankfurt + formatge</item>
+        <item>Beicon + formatge</item>
+        <item>Sobrasada + formatge</item>
+        <item>Llom</item>
+        <item>Pollastre</item>
+        <item>Bacó</item>
+        <item>Llomo + formatge</item>
+        <item>Pollastre + formatge</item>
+        <item>Bacó + formatge</item>
+        <item>York + formatge</item>
+        <item>Gall dindi + formatge</item>
+        <item>Hamburguesa</item>
+        <item>Hamburguesa</item>
         <item></item>
-        <item>Agua mineral con sodio</item>
-        <item>Agua mineral con magnesio</item>
-        <item>Agua mineral del grifo</item>
+        <item>Pa de coca + Enciam + Tomaquet + Ou dur + Formatge + Maionesa + ceba caramel·litzada</item>
+        <item>Pa de coca + Enciam + Tomaquet + Ou dur + Formatge + Maionesa + ceba caramel·litzada</item>
+        <item>Pa de coca + Enciam + Tomaquet + Ou dur + Formatge + Maionesa + ceba caramel·litzada</item>
+        <item>Pa de coca + Tonyina/Gall dindi/Pernil dolç/Enciam + Tomaquet + Ou dur + Formatge + Maionesa</item>
+        <item>Pa de coca + Tomaquet + Formatge brie</item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
     </string-array>
 
     <string-array name="listaCartaPrecio">
-        <item>Normal/Grande|</item>
-        <item>1,50/2,30|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>Normal/Grande|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>Precio|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
-        <item>1,70/2,50|</item>
+        <item>Normal/Gran|</item>
+        <item>1,30/2,60€</item>
+        <item>1,80/3,60€</item>
+        <item>1,60/3,20€</item>
+        <item>2,10/4,20€</item>
+        <item>1,55/3,10€</item>
+        <item>1,55/3,10€</item>
+        <item>1,55/3,10€</item>
+        <item>1,55/3,10€</item>
+        <item>1,95/3,90€</item>
+        <item>1,75/3,50€</item>
+        <item>1,90/3,80€</item>
+        <item>1,30/2,60€</item>
+        <item>1,20/2,40€</item>
+        <item>Normal/Gran|</item>
+        <item>1,30/2,60€</item>
+        <item>1,85/3,70€</item>
+        <item>1,90/3,80€</item>
+        <item>1,90/3,80€</item>
+        <item>1,90/3,80€</item>
+        <item>2,25/4,50€</item>
+        <item>2,25/4,50€</item>
+        <item>2,25/4,50€</item>
+        <item>1,90/3,80€</item>
+        <item>1,90/3,80€</item>
+        <item>1,90/3,80€</item>
+        <item>2,25/4,50€</item>
+        <item>2,25/4,50€</item>
+        <item>2,25/4,50€</item>
+        <item>1,95€</item>
+        <item>2,10€</item>
+        <item>2,20€</item>
+        <item>3,65€</item>
+        <item>Preu|</item>
+        <item>4,70€</item>
+        <item>4,70€</item>
+        <item>4,70€</item>
+        <item>3,70€</item>
+        <item>4,00€</item>
+        <item>Preu|</item>
+        <item>0,60€</item>
+        <item>0,70€</item>
+        <item>1,10€</item>
+        <item>1,40€</item>
+        <item>1,80€</item>
+        <item>1,50€</item>
+        <item>2,00€</item>
+        <item>1,60€</item>
+        <item>1,25€</item>
+        <item>1,10€</item>
+        <item>1,10€</item>
+        <item>1,35€</item>
+        <item>1,35€</item>
+        <item>1,90€</item>
+        <item>Preu|</item>
+        <item>0,90€</item>
+        <item>1,00€</item>
+        <item>1,10€</item>
+        <item>1,20€</item>
+        <item>1,20€</item>
+        <item>1,30€</item>
+        <item>1,30€</item>
+        <item>0,80€</item>
+        <item>1,20€</item>
+        <item>1,30€</item>
+        <item>1,30€</item>
+        <item>Preu|</item>
+        <item>0,90€</item>
+        <item>1,00€</item>
+        <item>1,00€</item>
+        <item>1,55€</item>
+        <item>1,15€</item>
     </string-array>
 </resources>
