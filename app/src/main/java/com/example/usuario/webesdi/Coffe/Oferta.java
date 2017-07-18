@@ -1,6 +1,7 @@
 package com.example.usuario.webesdi.Coffe;
 
 
+import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.graphics.Rect;
 import android.os.AsyncTask;
@@ -41,11 +42,22 @@ public class Oferta extends Fragment{
         recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view_oferta);
         menjar  = new ArrayList<>();
         load_data_from_server(0);
-        RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(), 2);
-        recyclerView.setLayoutManager(mLayoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
-        adapter = new AdaptadorOferta(getContext(),menjar);
-        recyclerView.setAdapter(adapter);
+        int orientacio = getResources().getConfiguration().orientation;
+        if (orientacio==1){
+            RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(), 2);
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
+            adapter = new AdaptadorOferta(getContext(),menjar);
+            recyclerView.setAdapter(adapter);
+            return rootView;
+        }else if (orientacio==2){
+            RecyclerView.LayoutManager mLayoutManager = new GridLayoutManager(getContext(), 4);
+            recyclerView.setLayoutManager(mLayoutManager);
+            recyclerView.addItemDecoration(new GridSpacingItemDecoration(4, dpToPx(10), true));
+            adapter = new AdaptadorOferta(getContext(),menjar);
+            recyclerView.setAdapter(adapter);
+
+        }
         return rootView;
     }
     private void load_data_from_server(int id) {
