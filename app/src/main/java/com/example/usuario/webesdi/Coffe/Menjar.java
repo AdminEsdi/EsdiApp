@@ -12,16 +12,18 @@ public class Menjar {
     private String nomMenjarCatala;
     private String nomMenjarCastella;
     private String nomMenjarAngles;
-    private Float preuMenjar;
+    private String preuMenjar;
     private String picMenjar;
 
-    public Menjar(int idMenjar, String nomMenjarCatala, String nomMenjarCastella, String nommenjarAngles, Float preuMenjar, String picMenjar) {
+    public Menjar(int idMenjar, String nomMenjarCatala, String nomMenjarCastella, String nommenjarAngles, String preuMenjar, String picMenjar) {
         this.idMenjar = idMenjar;
         this.nomMenjarCatala = nomMenjarCatala;
         this.nomMenjarCastella = nomMenjarCastella;
         this.nomMenjarAngles = nommenjarAngles;
         this.preuMenjar = preuMenjar;
         this.picMenjar = picMenjar;
+
+
     }
 
     public int getIdMenjar() {
@@ -56,11 +58,11 @@ public class Menjar {
         this.nomMenjarAngles = nomMenjarAngles;
     }
 
-    public Float getPreuMenjar() {
+    public String getPreuMenjar() {
         return preuMenjar;
     }
 
-    public void setPreuMenjar(Float preuMenjar) {
+    public void setPreuMenjar(String preuMenjar) {
         this.preuMenjar = preuMenjar;
     }
 

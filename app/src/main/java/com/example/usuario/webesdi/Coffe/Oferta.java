@@ -68,7 +68,7 @@ public class Oferta extends Fragment{
                         JSONObject object = array.getJSONObject(i);
 
 
-                        Menjar data = new Menjar(object.getInt("id"),object.getString("nomMenjarCatala"),object.getString("nomMenjarCastella"),object.getString("nomMenjarAngles"),BigDecimal.valueOf(object.getDouble("preuMenjar")).floatValue(),object.getString("picMenjar"));
+                        Menjar data = new Menjar(object.getInt("id"),object.getString("nomMenjarCatala"),object.getString("nomMenjarCastella"),object.getString("nomMenjarAngles"),object.getString("preuMenjar"),object.getString("picMenjar"));
 
                         menjar.add(data);
                     }
