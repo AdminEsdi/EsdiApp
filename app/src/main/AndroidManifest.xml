@@ -61,6 +61,7 @@
             android:label="@string/title_activity_cafeteria"
             android:theme="@style/AppTheme.NoActionBar"
             android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
             />
         <activity android:name=".Tutorial.ListaPdf"></activity>
     </application>
