@@ -148,7 +148,7 @@ public class MainActivity extends BaseActivity
     private void updateUI(boolean signedIn) {
         if (signedIn) {
 
-                iniciarActivity();
+            iniciarActivity();
         } else {
 
             btnSignIn.setVisibility(View.VISIBLE);
@@ -199,4 +199,3 @@ public class MainActivity extends BaseActivity
 //comentario
 
 }
-

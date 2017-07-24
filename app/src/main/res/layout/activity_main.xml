@@ -89,6 +89,20 @@
             </com.google.android.gms.common.SignInButton>
 
         </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mierdadebd"
+            android:layout_width="147dp"
+            android:layout_height="65dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/google_icon"
+            android:layout_marginTop="8dp" />
     </android.support.constraint.ConstraintLayout>
 
 </LinearLayout>
