@@ -27,6 +27,7 @@ public class ListaPdf extends BaseActivity {
         ListView lst = (ListView) findViewById(R.id.listaTutoriales);
         Intent Mainact = getIntent();
         nom = Mainact.getStringExtra("nombre");
+        //depende que boton hayamos pulsará cargará una lista de arrays o otra.
         switch (nom) {
             case "impresora":
                 titulo = res.getStringArray(R.array.array_lista_utilidad);
@@ -41,6 +42,7 @@ public class ListaPdf extends BaseActivity {
                 subtitulo = res.getStringArray(R.array.array_lista_extras_sub);
                 break;
         }
+        //arrancamos el adaptador para poder visualizar las arrays y si clicamos que nos lleve al pdf
         MyAdapter myAdapter = new MyAdapter(ListaPdf.this,titulo,subtitulo);
         lst.setAdapter(myAdapter);
         lst.setOnItemClickListener(new AdapterView.OnItemClickListener() {

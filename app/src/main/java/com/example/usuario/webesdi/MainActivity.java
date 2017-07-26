@@ -27,7 +27,6 @@ public class MainActivity extends BaseActivity
     private SignInButton btnSignIn;
     private Button btnSignOut,btnInvitado;
     String Email,Nombre,rol = "Invitado",URLserver ="http://67.222.58.123/";
-
     private GoogleApiClient apiClient;
     private static final int RC_SIGN_IN = 1001;
     private ProgressDialog progressDialog;
@@ -41,8 +40,8 @@ public class MainActivity extends BaseActivity
         btnInvitado = (Button)findViewById(R.id.btnInvitado);
 
 /*
-
-        //Google API Client
+        Creación del boton de login con Google API Client tutorial en el siguiente enlace
+        https://developers.google.com/identity/sign-in/android/
 */
         GoogleSignInOptions gso =
                 new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -62,8 +61,7 @@ public class MainActivity extends BaseActivity
 
         //Eventos de los botones
 
-
-
+        //Evento para iniciar el LogIn
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -72,6 +70,7 @@ public class MainActivity extends BaseActivity
             }
         });
 
+        //Con este evento borraremos los datos de login.
         btnSignOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -82,7 +81,7 @@ public class MainActivity extends BaseActivity
                             public void onResult(Status status) {
                                 if (status.isSuccess()) {
                                     Toast.makeText(getApplicationContext(), "Ha funcionado", Toast.LENGTH_SHORT).show();
-                                    rol="Invitado";
+                                    rol="Invitado";                                                 //Cambiar el rol a invitado es importante, si no conserva el rol anterior
                                     updateUI(false);
                                 }else{
                                     Toast.makeText(getApplicationContext(), "NO ha funcionado", Toast.LENGTH_SHORT).show();
@@ -98,6 +97,8 @@ public class MainActivity extends BaseActivity
                         });*/
             }
         });
+
+        //Evento de entrar como invitado
         btnInvitado.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

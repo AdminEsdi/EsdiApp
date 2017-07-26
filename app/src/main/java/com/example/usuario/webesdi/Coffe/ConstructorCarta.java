@@ -38,55 +38,27 @@ public class ConstructorCarta {
         return nombreEng;
     }
 
-    public void setNombreEng(String nombreEng) {
-        this.nombreEng = nombreEng;
-    }
-
     public String getNombreEsp() {
         return nombreEsp;
-    }
-
-    public void setNombreEsp(String nombreEsp) {
-        this.nombreEsp = nombreEsp;
     }
 
     public String getNombreCat() {
         return nombreCat;
     }
 
-    public void setNombreCat(String nombreCat) {
-        this.nombreCat = nombreCat;
-    }
-
     public String getPrecio() {
         return precio;
-    }
-
-    public void setPrecio(String precio) {
-        this.precio = precio;
     }
 
     public String getDescripEng() {
         return descripEng;
     }
 
-    public void setDescripEng(String descripEng) {
-        this.descripEng = descripEng;
-    }
-
     public String getDescripEsp() {
         return descripEsp;
     }
 
-    public void setDescripEsp(String descripEsp) {
-        this.descripEsp = descripEsp;
-    }
-
     public String getDescripCat() {
         return descripCat;
-    }
-
-    public void setDescripCat(String descripCat) {
-        this.descripCat = descripCat;
     }
 }

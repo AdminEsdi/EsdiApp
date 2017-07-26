@@ -41,6 +41,7 @@ public class tutoriaV2 extends BaseActivity {
         gimp = (ImageView) findViewById(R.id.imgGimp);
         textView4 = (TextView) findViewById(R.id.textView4);
 
+        //creamos los accesos a cada seccion
         impresora.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,15 +72,16 @@ public class tutoriaV2 extends BaseActivity {
             }
         });
 
+        //creamos una lista scrollable
         ListView lv= (ListView)findViewById(R.id.listaPdfInicial);
         lv.setVisibility(View.INVISIBLE);
         ScrollView sc = (ScrollView) findViewById(R.id.scrollTutorial);
         sc.setVisibility(View.VISIBLE);
-
+        //Creamos una lista de arrays y introducimos los datos generales y lo ponemoes en nuesto adaptador
         ArrayList<String> arrayTitulo = new ArrayList<>();
         arrayTitulo.addAll(Arrays.asList(getResources().getStringArray(R.array.array_lista_general)));
         adapter = new ArrayAdapter<>(tutoriaV2.this,android.R.layout.simple_list_item_1,arrayTitulo);
-
+        //arrancamos lo que hay en el adapter
         Resources res = getResources();
         titulo = res.getStringArray(R.array.array_lista_general);
         subtitulo = res.getStringArray(R.array.array_lista_general_sub);
@@ -88,6 +90,7 @@ public class tutoriaV2 extends BaseActivity {
 
     }
 
+    //metodo para crear el buscador
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -108,13 +111,14 @@ public class tutoriaV2 extends BaseActivity {
             public boolean onQueryTextChange(String newText) {
                 ListView lv= (ListView)findViewById(R.id.listaPdfInicial);
                 ScrollView sc = (ScrollView) findViewById(R.id.scrollTutorial);
+                //si existe algo del buscador me pondra la lista, si no hay nada me dejará la vista normal
                 if(newText.equals("")){
                     sc.setVisibility(View.VISIBLE);
                     lv.setVisibility(View.INVISIBLE);
                 }else {
                     sc.setVisibility(View.INVISIBLE);
                     lv.setVisibility(View.VISIBLE);
-
+                    //si clicamos en un elemento nos llevara al pdf que queremos.
                     lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

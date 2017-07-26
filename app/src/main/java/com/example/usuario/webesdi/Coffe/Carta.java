@@ -60,7 +60,7 @@ public class Carta extends Fragment{
 
                 OkHttpClient client = new OkHttpClient();
                 okhttp3.Request request = new okhttp3.Request.Builder()
-                        .url("http://67.222.58.123/ddt/sql/cafeteriaCarta.php")
+                        .url("http://67.222.58.123/ddt/sql/cafeteriaCarta.php")                     //Lugar donde se encuentra la query
                         .build();
                 try {
                     okhttp3.Response response = client.newCall(request).execute();

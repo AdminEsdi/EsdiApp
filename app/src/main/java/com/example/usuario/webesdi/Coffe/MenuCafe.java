@@ -36,6 +36,8 @@ public class MenuCafe extends Fragment{
         recyclerView.setAdapter(adapter);
         return rootView;
     }
+
+    //Con este metodo cargaremos de la BBDD los datos necesarios.
     private void load_data_from_server(int id) {
 
         AsyncTask<Integer,Void,Void> task = new AsyncTask<Integer, Void, Void>() {
@@ -44,11 +46,11 @@ public class MenuCafe extends Fragment{
 
                 OkHttpClient client = new OkHttpClient();
                 okhttp3.Request request = new okhttp3.Request.Builder()
-                        .url("http://67.222.58.123/ddt/sql/menuBar.php")
+                        .url("http://67.222.58.123/ddt/sql/menuBar.php")                            //Dirección donde ha de ir a buscar el archivo de la query
                         .build();
                 try {
                     okhttp3.Response response = client.newCall(request).execute();
-                    JSONArray array = new JSONArray(response.body().string());
+                    JSONArray array = new JSONArray(response.body().string());                      //el arvhico .php nos devuelve en formato JSON con lo cual tendremos que traducirlo a arrays y posteriormente guardarlo en una clase.
                     for (int i=0; i<array.length(); i++){
                         JSONObject object = array.getJSONObject(i);
                         Menu data = new Menu(object.getInt("id"),object.getString("setmana"),object.getString("diasetmanaCatala"),object.getString("diasetmanaCastella"),object.getString("diasetmanaAngles"),object.getString("primerPlatCatala"),object.getString("segonPlatCatala"),object.getString("postresCatala"),object.getString("primerPlatCastella"),object.getString("segonPlatCastella"),object.getString("postresCastella"),object.getString("primerPlatAngles"),object.getString("segonPlatAngles"),object.getString("postresAngles"));

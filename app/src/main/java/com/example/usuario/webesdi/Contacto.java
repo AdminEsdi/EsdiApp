@@ -50,6 +50,7 @@ public class Contacto extends BaseActivity implements OnMapReadyCallback {
 
         mapFragment.getMapAsync(this);
 
+        //Con este metodo abrimo tu marcador de numeros con un numero de contacto para que puedas llamar
         numero.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

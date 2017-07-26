@@ -35,6 +35,7 @@ public class MyAdapterCarta extends RecyclerView.Adapter<MyAdapterCarta.ViewHold
         return new ViewHolder(itemView);
     }
 
+    //Con este metodo conseguimos instanciar en el holder lo recogido anteriormente en la BBDD y instanciado en la clase ConstructorCarta
     @Override
     public void onBindViewHolder(ViewHolder mViewHolder, int position) {
         String idioma = Locale.getDefault().toString(); // es_ES
@@ -57,41 +58,8 @@ public class MyAdapterCarta extends RecyclerView.Adapter<MyAdapterCarta.ViewHold
     public int getItemCount(){
         return listaCarta.size();
     }
-/*
-    @NonNull
-    @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        MyAdapterCarta.ViewHolder mViewHolder = new MyAdapterCarta.ViewHolder();
-        if(convertView==null) {
-            LayoutInflater mInflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView = mInflater.inflate(R.layout.custom_adapter_carta, parent, false);
-            String idioma = Locale.getDefault().toString(); // es_ES
-            if (idioma.equals("ca")) {
-                mViewHolder.txtcomida.setText(listaCarta.get(position).getNombreCat());
-                mViewHolder.txtprecio.setText(listaCarta.get(position).getPrecio());
-                mViewHolder.txtcontenido.setText(listaCarta.get(position).getDescripCat());
-            } else if (idioma.equals("es")) {
-                mViewHolder.txtcomida.setText(listaCarta.get(position).getNombreEsp());
-                mViewHolder.txtprecio.setText(listaCarta.get(position).getPrecio());
-                mViewHolder.txtcontenido.setText(listaCarta.get(position).getDescripEsp());
-            } else if (idioma.equals("en")) {
-                mViewHolder.txtcomida.setText(listaCarta.get(position).getNombreEng());
-                mViewHolder.txtprecio.setText(listaCarta.get(position).getPrecio());
-                mViewHolder.txtcontenido.setText(listaCarta.get(position).getDescripEng());
-            }
 
-            convertView.setTag(mViewHolder);
-        }else{
-            mViewHolder = (MyAdapterCarta.ViewHolder)convertView.getTag();
-        }
-        mViewHolder.txtcomida.setText(listaCarta.get(position).getNombreEsp());
-        mViewHolder.txtprecio.setText(listaCarta.get(position).getPrecio());
-        mViewHolder.txtcontenido.setText(listaCarta.get(position).getDescripEsp());
-
-        return convertView;
-    }*/
-
-
+    //Con el viewHolder conseguimos detectar donde se encuentran los TextViews.
     public class ViewHolder extends  RecyclerView.ViewHolder{
         TextView txtcomida;
         TextView txtprecio;

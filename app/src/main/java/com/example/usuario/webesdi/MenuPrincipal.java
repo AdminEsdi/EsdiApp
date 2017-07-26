@@ -32,16 +32,18 @@ public class MenuPrincipal extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu_principal);
-        setTitle(getResources().getText(R.string.titMenuP));
+        setTitle(getResources().getText(R.string.titMenuP));                                                                        //De esta manera cambiamos el titulo del marco superior.
 
         Intent Mainact = getIntent();
 
         b = Mainact.getExtras();
 
+        //extraemos datos del bundle
         email = b.getString("email");
         nombre = b.getString("nombre");
         rol = b.getString("rol");
 
+        //buscamos las ImageViews que usaremos como boton
         btnpaginaweb = (ImageView) findViewById(R.id.btnpaginaweb);
         btnContacto = (ImageView) findViewById(R.id.btnContacto);
         btnMensajes = (ImageView) findViewById(R.id.btnMensajes);
@@ -58,6 +60,7 @@ public class MenuPrincipal extends BaseActivity {
         //btnVacio = (Button) findViewById(R.id.btnVacio);textAluas,textMensajes,txtServeis,textView4;
         //btnCancelar = (ImageView) findViewById(R.id.algo);
 
+        //el boton hace un setOnClickListenter y le damos el metodo concreto para que encuentre donde ha de ir
         btnpaginaweb.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v){
                 lanzarPaginaWeb();
@@ -117,11 +120,10 @@ public class MenuPrincipal extends BaseActivity {
             }
         });*/
 
-        //solo un administrador puede entrar a incidencias
+        //solo un administrador puede entrar a incidencias, y los invitados no pueden entrar a dispoaulas ni servicios y a mensajes
         if (rol.equalsIgnoreCase("Administrador")){
             btnIncidencias.setVisibility(View.VISIBLE);
             textView4.setVisibility(View.VISIBLE);
-
         }else if(rol.equalsIgnoreCase("Invitado")){
             btndispoAulas.setVisibility(View.INVISIBLE);
             btnServicios.setVisibility(View.INVISIBLE);
@@ -132,9 +134,9 @@ public class MenuPrincipal extends BaseActivity {
             txtServeis.setVisibility(View.INVISIBLE);
         }
 
-
-
     }
+
+    //metodos para entrar a una nueva activity
     private void lanzarPaginaWeb(){
         Intent intent = new Intent(MenuPrincipal.this,PaginaWeb.class);
         intent.putExtras(b);
